@@ -15,3 +15,5 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 4.  [Oguzhan Turkyilmaz](/takim/oguzhan.qmd)
 
 5.  [Ayça YAVUZ](/takim/ayca.qmd)
+
+6.  [Pınar KARABACAK](/takim/pinar.qmd)
