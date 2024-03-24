@@ -31,16 +31,18 @@ website:
         - portfolyo/calisma1.qmd
         - portfolyo/calisma2.qmd  
         
-    - title: "Takım"
+    - title: "Team B"
       style: "docked"
       search: true
       contents:
         - takim.qmd
-        - takim/dusantadic.qmd
-        - takim/edindzeko.qmd
-        - takim/fred.qmd  
-        - takim/szymanski.qmd  
-        
+        - takim/orkun.qmd
+        - takim/Mert_Caglar.qmd
+        - takim/ayca.qmd  
+        - takim/dicle.qmd  
+        - takim/oguzhan.qmd
+        - takim/pinar.qmd  
+        - takim/yasemin.qmd  
         
   page-navigation: true
   back-to-top-navigation: true
