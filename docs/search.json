@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Takım: XXX",
+    "title": "Takım: Team B",
     "section": "",
     "text": "MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.\nBu analitik çalışmalarımızı paylaşıyoruz.\nLütfen faaliyetlerimizi görmek için için bizi takipte kalın."
   },
@@ -192,37 +192,37 @@
   {
     "objectID": "index.html#proje-adı",
     "href": "index.html#proje-adı",
-    "title": "Takım: XXX",
+    "title": "Takım: Team B",
     "section": "Proje Adı",
     "text": "Proje Adı\nMUY660-İş Analitiği iyileştirme çalışmaları (örnek)"
   },
   {
     "objectID": "index.html#proje-konusu",
     "href": "index.html#proje-konusu",
-    "title": "Takım: XXX",
+    "title": "Takım: Team B",
     "section": "Proje Konusu",
     "text": "Proje Konusu\nÖrnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için …….. yöntemleri kullanarak, ……. çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik."
   },
   {
     "objectID": "index.html#veri-seti-hakkında-özet-bilgi",
     "href": "index.html#veri-seti-hakkında-özet-bilgi",
-    "title": "Takım: XXX",
+    "title": "Takım: Team B",
     "section": "Veri Seti Hakkında Özet Bilgi",
     "text": "Veri Seti Hakkında Özet Bilgi"
   },
   {
     "objectID": "index.html#sonuçlar",
     "href": "index.html#sonuçlar",
-    "title": "Takım: XXX",
+    "title": "Takım: Team B",
     "section": "Sonuçlar",
     "text": "Sonuçlar\nBurada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır."
   },
   {
     "objectID": "index.html#takım-üyeleri",
     "href": "index.html#takım-üyeleri",
-    "title": "Takım: XXX",
+    "title": "Takım: Team B",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
+    "text": "Takım Üyeleri\n\nOrkun AYDIN\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
   },
   {
     "objectID": "portfolyo.html",
@@ -550,5 +550,19 @@
       "Takım Üyeleri",
       "Dusan Tadic"
     ]
+  },
+  {
+    "objectID": "takim/orkun.html#işler",
+    "href": "takim/orkun.html#işler",
+    "title": "Orkun AYDIN",
+    "section": "İşler",
+    "text": "İşler\n\nASELSAN , Kalite Mühendisi, Temmuz 2021 - devam"
+  },
+  {
+    "objectID": "takim/orkun.html#stajlar",
+    "href": "takim/orkun.html#stajlar",
+    "title": "Orkun AYDIN",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nTEI, Test Stajyeri, 2020 Temmuz-Ağustos\nŞişecam, Bakım Stajyeri, Haziran - Ağustos"
   }
 ]
