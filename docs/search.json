@@ -222,25 +222,21 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: Team B",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nOrkun AYDIN\nMert CAGLAR\nOguzhan TURKYILMAZ\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański"
+    "text": "Takım Üyeleri\n\nOrkun AYDIN\nMert CAGLAR\nOguzhan TURKYILMAZ\nDicle BAYDAR\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański"
   },
   {
     "objectID": "portfolyo.html",
     "href": "portfolyo.html",
     "title": "Portfolyo",
     "section": "",
-    "text": "Bu sayfada, MUY665 İş Analitiği dersi 2023-2024 bahar dönemi boyunca yaptığımız analitik çalışmalarını sunmaktayız. Çalışmalarımıza sol menüden ulaşabilirsiniz.\n\n\n\n Back to top",
-    "crumbs": [
-      "Porfolyo",
-      "Portfolyo"
-    ]
+    "text": "Bu sayfada, MUY665 İş Analitiği dersi 2023-2024 bahar dönemi boyunca yaptığımız analitik çalışmalarını sunmaktayız. Çalışmalarımıza sol menüden ulaşabilirsiniz.\n\n\n\n Back to top"
   },
   {
     "objectID": "takim.html",
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nOrkun AYDIN\nMert Caglar\nSebastian Szymański\nOguzhan Turkyilmaz\n\n\n\n\n\n Back to top"
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nOrkun AYDIN\nMert Caglar\nDicle BAYDAR\nOguzhan Turkyilmaz\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "proje.html",
@@ -310,22 +306,14 @@
     "href": "portfolyo/calisma2.html",
     "title": "Çalışma 2",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 2"
-    ]
+    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz."
   },
   {
     "objectID": "portfolyo/calisma1.html",
     "href": "portfolyo/calisma1.html",
     "title": "Çalışma 1",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 1"
-    ]
+    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz."
   },
   {
     "objectID": "proje.html#veri-kaynağı",
@@ -388,44 +376,28 @@
     "href": "portfolyo/calisma1.html#a",
     "title": "Çalışma 1",
     "section": "(a)",
-    "text": "(a)\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 1"
-    ]
+    "text": "(a)\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "portfolyo/calisma2.html#a",
     "href": "portfolyo/calisma2.html#a",
     "title": "Çalışma 2",
     "section": "(a)",
-    "text": "(a)\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 2"
-    ]
+    "text": "(a)\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "portfolyo/calisma2.html#b",
     "href": "portfolyo/calisma2.html#b",
     "title": "Çalışma 2",
     "section": "(b)",
-    "text": "(b)",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 2"
-    ]
+    "text": "(b)"
   },
   {
     "objectID": "portfolyo/calisma1.html#b",
     "href": "portfolyo/calisma1.html#b",
     "title": "Çalışma 1",
     "section": "(b)",
-    "text": "(b)",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 1"
-    ]
+    "text": "(b)"
   },
   {
     "objectID": "takim/dusantadic.html",
@@ -465,22 +437,14 @@
     "href": "takim/szymanski.html#işler",
     "title": "Sebastian Szymański",
     "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Sebastian Szymański"
-    ]
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
   },
   {
     "objectID": "takim/szymanski.html#stajlar",
     "href": "takim/szymanski.html#stajlar",
     "title": "Sebastian Szymański",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Sebastian Szymański"
-    ]
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
   },
   {
     "objectID": "takim/edindzeko.html#işler",
@@ -588,5 +552,19 @@
     "title": "Oguzhan TURKYILMAZ",
     "section": "Stajlar",
     "text": "Stajlar\n\nEmek Boru - Sincan OSB, Engineering Intern - Research and development (R&D) & Quality Control, ANKARA, August 2021 - September 2021\nÖztepe Plastik - İvedik OSB, ANKARA, Engineering Project Intern - 3D Printing and Simulations, July 2021 - August 2021"
+  },
+  {
+    "objectID": "takim/dicle.html#işler",
+    "href": "takim/dicle.html#işler",
+    "title": "Dicle BAYDAR",
+    "section": "İşler",
+    "text": "İşler\n\nTRL Instruments , Kimyager, Eylül 2020 - devam ediyor."
+  },
+  {
+    "objectID": "takim/dicle.html#stajlar",
+    "href": "takim/dicle.html#stajlar",
+    "title": "Dicle BAYDAR",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nMaden Tetkik ve Arama Genel Müdürlüğü Temmuz 2019- Ağustos 2019"
   }
 ]

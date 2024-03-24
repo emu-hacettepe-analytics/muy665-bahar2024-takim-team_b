@@ -10,6 +10,6 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 2.  [Mert Caglar](/takim/Mert_Caglar.qmd)
 
-3.  [Sebastian Szymański](/takim/szymanski.qmd)
+3.  [Dicle BAYDAR](/takim/dicle.qmd)
 
 4.  [Oguzhan Turkyilmaz](/takim/oguzhan.qmd)
