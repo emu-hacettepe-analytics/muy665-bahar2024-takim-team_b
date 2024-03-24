@@ -1,0 +1,32 @@
+---
+title: "Ayça YAVUZ"
+---
+
+![](images/aycayavuz.jpeg){width="192"}
+
+# Eğitim
+
+-   Lisans, Elektronik ve Haberleşme Mühendisliği, İzmir Yüksek Teknoloji Enstitüsü, Türkiye, 2015 - 2020.
+-   Yüksek Lisans, Mühendislik Yönetimi, Hacettepe Üniversitesi, Türkiye, 2024 - devam ediyor.
+
+# İş Deneyimi
+
+## İşler
+
+1.  ARTRON Tasarım A.Ş., Sistem Tasarım Mühendisi, Haziran 2023 - devam
+2.  ASELSAN A.Ş., Sistem Tasarım Mühendisi, 2020-2023
+3.  ASELSAN A.Ş., Sistem Tasarım Aday Mühendisi, 2019-2020
+
+## Stajlar
+
+1.  ASELSAN A.Ş., Sistem Tasarım Departmanı, 2019
+2.  University of Mons, Electromagnetism and Telecommunication Department, 2018
+3.  ENKA Santral İşletme ve Bakım Hizmetleri A.Ş, 2018
+
+# Yetkinlikler
+
+MATLAB, Simulink, C, CANBus Protocol, Peak System, SAE J1939, MS Office, TFS
+
+# Hobiler
+
+Makrome, Dikiş, Ahşap Boyama, Bulmaca, Pilates, Seramik

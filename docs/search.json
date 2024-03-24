@@ -236,7 +236,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nOrkun AYDIN\nMert Caglar\nDicle BAYDAR\nOguzhan Turkyilmaz\n\n\n\n\n\n Back to top"
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nOrkun AYDIN\nMert Caglar\nDicle BAYDAR\nOguzhan Turkyilmaz\nAyça YAVUZ\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "proje.html",
@@ -465,22 +465,14 @@
     "href": "takim/fred.html#işler",
     "title": "Frederico Rodrigues",
     "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Frederico Rodrigues"
-    ]
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
   },
   {
     "objectID": "takim/fred.html#stajlar",
     "href": "takim/fred.html#stajlar",
     "title": "Frederico Rodrigues",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Frederico Rodrigues"
-    ]
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
   },
   {
     "objectID": "takim/dusantadic.html#işler",
@@ -566,5 +558,19 @@
     "title": "Dicle BAYDAR",
     "section": "Stajlar",
     "text": "Stajlar\n\nMaden Tetkik ve Arama Genel Müdürlüğü Temmuz 2019- Ağustos 2019"
+  },
+  {
+    "objectID": "takim/ayca.html#işler",
+    "href": "takim/ayca.html#işler",
+    "title": "Ayça YAVUZ",
+    "section": "İşler",
+    "text": "İşler\n\nARTRON Tasarım A.Ş., Sistem Tasarım Mühendisi, Haziran 2023 - devam\nASELSAN A.Ş., Sistem Tasarım Mühendisi, 2020-2023\nASELSAN A.Ş., Sistem Tasarım Aday Mühendisi, 2019-2020"
+  },
+  {
+    "objectID": "takim/ayca.html#stajlar",
+    "href": "takim/ayca.html#stajlar",
+    "title": "Ayça YAVUZ",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nASELSAN A.Ş., Sistem Tasarım Departmanı, 2019\nUniversity of Mons, Electromagnetism and Telecommunication Department, 2018\nENKA Santral İşletme ve Bakım Hizmetleri A.Ş, 2018"
   }
 ]

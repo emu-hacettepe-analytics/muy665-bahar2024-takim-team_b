@@ -13,3 +13,5 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 3.  [Dicle BAYDAR](/takim/dicle.qmd)
 
 4.  [Oguzhan Turkyilmaz](/takim/oguzhan.qmd)
+
+5.  [Ayça YAVUZ](/takim/ayca.qmd)
