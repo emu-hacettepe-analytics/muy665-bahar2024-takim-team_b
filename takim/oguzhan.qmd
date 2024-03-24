@@ -1,0 +1,59 @@
+---
+title: "Oguzhan TURKYILMAZ"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+![](/assets/images/PHOTO-2024-03-24-17-08-21.jpg){fig-align="center"}
+
+# Eğitim
+
+Major: Courses Include:
+
+-Metallurgical and Materials Engineering
+
+• Surface Processing of Materials • Ceramic Materials • Materials
+Technology Management • Principles of Solidification • Electrical,
+Magnetic & Optical Properties of Materials • Structure and
+Characterization of Materials • Polymer Materials • Metallic Materials
+and Metallography Materials • Thin Film Materials • Materials For
+Organic Electronics • Multi-Scale Modeling and Simulation of Materials •
+Physical Metallurgy • Chemical Metallurgy
+
+# İş Deneyimi
+
+## İşler
+
+1.  Mobiversite - Bilkent Cyberpark, Çankaya,Digital Marketing
+    Specialist, April 2022 – May 2023
+
+## Stajlar
+
+1.  Emek Boru - Sincan OSB, Engineering Intern - Research and
+    development (R&D) & Quality Control, ANKARA, August 2021 - September
+    2021
+
+2.  Öztepe Plastik - İvedik OSB, ANKARA, Engineering Project Intern - 3D
+    Printing and Simulations, July 2021 - August 2021
+
+# Projeler
+
+1.  Engineering Management Project
+
+-   Designed market and competitor analysis and marketing of a mobile
+    application, March 2022 - July 2022
+
+2.  Undergraduate Student Researcher - Metallurgical and Materials
+    Engineering Laboratory
+
+-   Designed for Materials and Process Selection of Tennis Racket by
+    using CES Lab, October 2021 - February 2022
+
+# Yetkinlikler
+
+• C • ANSYS • Siemens NX • OpenSCAD • CMPR • Microsoft Office
+
+# Hobiler
+
+Basketbol oynamak, spor yapmak , kitap okumak

@@ -222,7 +222,7 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: Team B",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nOrkun AYDIN\nMert Caglar\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański"
+    "text": "Takım Üyeleri\n\nOrkun AYDIN\nMert CAGLAR\nOguzhan TURKYILMAZ\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański"
   },
   {
     "objectID": "portfolyo.html",
@@ -240,7 +240,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nOrkun AYDIN\nMert Caglar\nSebastian Szymański\n\n\n\n\n\n Back to top"
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nOrkun AYDIN\nMert Caglar\nSebastian Szymański\nOguzhan Turkyilmaz\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "proje.html",
@@ -574,5 +574,19 @@
     "title": "Mert Çağlar",
     "section": "Stajlar",
     "text": "Stajlar\n\nTübitak Uzay, 2013-2014 Temmuz-Ağustos"
+  },
+  {
+    "objectID": "takim/oguzhan.html#işler",
+    "href": "takim/oguzhan.html#işler",
+    "title": "Oguzhan TURKYILMAZ",
+    "section": "İşler",
+    "text": "İşler\n\nMobiversite - Bilkent Cyberpark, Çankaya,Digital Marketing Specialist, April 2022 – May 2023"
+  },
+  {
+    "objectID": "takim/oguzhan.html#stajlar",
+    "href": "takim/oguzhan.html#stajlar",
+    "title": "Oguzhan TURKYILMAZ",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nEmek Boru - Sincan OSB, Engineering Intern - Research and development (R&D) & Quality Control, ANKARA, August 2021 - September 2021\nÖztepe Plastik - İvedik OSB, ANKARA, Engineering Project Intern - 3D Printing and Simulations, July 2021 - August 2021"
   }
 ]
