@@ -222,7 +222,7 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: Team B",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nOrkun AYDIN\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański"
+    "text": "Takım Üyeleri\n\nOrkun AYDIN\nMert Caglar\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański\nSebastian Szymański"
   },
   {
     "objectID": "portfolyo.html",
@@ -240,7 +240,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nOrkun AYDIN\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top"
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nOrkun AYDIN\nMert Caglar\nSebastian Szymański\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "proje.html",
@@ -487,22 +487,14 @@
     "href": "takim/edindzeko.html#işler",
     "title": "Edin_Džeko",
     "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Edin_Džeko"
-    ]
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
   },
   {
     "objectID": "takim/edindzeko.html#stajlar",
     "href": "takim/edindzeko.html#stajlar",
     "title": "Edin_Džeko",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Edin_Džeko"
-    ]
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
   },
   {
     "objectID": "takim/fred.html#işler",
@@ -561,5 +553,26 @@
     "title": "Orkun AYDIN",
     "section": "Stajlar",
     "text": "Stajlar\n\nTEI, Test Stajyeri, 2020 Temmuz-Ağustos\nŞişecam, Bakım Stajyeri, Haziran - Ağustos"
+  },
+  {
+    "objectID": "takim/Mert_Caglar.html",
+    "href": "takim/Mert_Caglar.html",
+    "title": "XX Takımı Analitik Labı",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "takim/Mert_Caglar.html#işler",
+    "href": "takim/Mert_Caglar.html#işler",
+    "title": "Mert Çağlar",
+    "section": "İşler",
+    "text": "İşler\n\nTrustformer Electric , CEO/Founder, Ocak 2023 - devam"
+  },
+  {
+    "objectID": "takim/Mert_Caglar.html#stajlar",
+    "href": "takim/Mert_Caglar.html#stajlar",
+    "title": "Mert Çağlar",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nTübitak Uzay, 2013-2014 Temmuz-Ağustos"
   }
 ]
