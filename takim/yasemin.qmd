@@ -2,30 +2,169 @@
 title: "Yasemin AKTAŞ"
 ---
 
-![](images/YA profil photo .jpeg)
+![](images/YA%20profil%20photo%20.jpeg)
 
 # Eğitim
 
 -   Lisans, İnşaat Mühendisliği, Bozok Üniversitesi, Türkiye, 2008 - 2012
--   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2023 - devam ediyor.
+-   Bilgisayar Programlama Programı , Eskişehir Anadolu Üniversitesi 2023 - devam ediyor
+-   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2024 - devam ediyor.
 
 # İş Deneyimi
 
 ## İşler
 
-1.  Prota Yazılım , Teknik Destek ve Test Yöneticisi, Temmuz 2018 - devam
-2.  Prota Mühendislik , Çelik Tasarım Mühendisi 2015-2018
+1.  Prota Yazılım , Teknik Destek ve Test Yöneticisi , 2018 - devam ediyor
+2.  Prota Mühendislik , Çelik Tasarım Mühendisi , 2015-2018
+3.  Nuriş Prefabrik Yapı , Üretim Mühendisi , 2013-2015
+4.  TAI-TUSAŞ , Saha Mühendisi , 2012-2013
 
 ## Stajlar
 
 1.  Karayolları Genel Müdürlüğü 4. Bölge, Ulaşım Stajı 2011
 
-2.  
+2.  Şantiye Stajı, 2010
+
+# Projeler
+
+**IGA Istanbul New Airport** (steel structures, steel-composite floors, stairs, steel roof, pier roof controls, facades design)
+
+**Kırıkkale Power Plant Industrial Structures** (Acwa Power - Samsung CT)
+
+**Mardin Mazıdağı Metal Recovery and Integrated Fertilizer Facilities** (Cengiz Holding-Europe's largest industrial facility, closed circuit production system)
+
+**Samsun Industrial Facility Project** (Cengiz Holding)
+
+**Pamukkale University Faculty of Architecture Building** (competition Project, ITU)
+
+**New Cerrahpaşa Faculty of Medicine Campus**
+
+**KMM Metro Line**
+
+**Ankara High-Speed Train Station**
+
+**TED College Ankara** (steel roof design)
+
+**Marmaray Metro Project** (warehouse buildings, station structures)
+
+**Üsküdar Ümraniye Çekmeköy Metro Project**
+
+**Ataköy-ikitelli Metro Project**
+
+**Izmir Buca Metro Project**
+
+**Kabataş Mahmutbey Metro Project**
+
+**Diyarbakır Stadium Project**
+
+**Van 100. Yıl Sports Hall Project**
+
+**Ankara Sinpaş Project** (skywalk, curved bridge, roof design)
+
+**Ankara Incek Loft and Akfen Projects**
+
+**Istanbul Garbage Facility Project** (Makyol)
+
+**Skopje-Macedonia Shopping Mall Complex** (Roof design)
+
+**Izmir Star Refinery Industrial Facility Project** (Socar)
+
+**Bursa Tram Project**
+
+**Kuwait International Airport Project** (steel works)
+
+**Turkcell Data Center** (Explosion-proof structure design)
+
+**Erzurum Hospital Project**
+
+**Manisa Merkezefendi Hospital Project**
+
+**Egyptian Grand Museum** (Exterior Cladding Carrier System-Hill International)
+
+**Samsun Flotation Facility Steel Structure** (Reinforcement Project)
+
+**Çapa Hospital Project**
+
+**Gayrettepe Turktelekom Project**
+
+**YEKA Ankara PIL Solar Panel Facility Project**
+
+**Kazakhstan Almaty International Airport** (Load-bearing Wall Systems)
+
+**Astana Grand Mosque** (roof panels)
+
+**Galataport Istanbul Steel Canopies**
+
+**Gaziantep Allaben Park** (residential steel structures)
+
+**Malatya Flour Factory Industrial Structure**
+
+**Nigeria Spiral Staircase**
+
+**Senegal Industrial Structure**
 
 # Yetkinlikler
 
-SAP2000, TEKLA STRUCTURES,ProtaStructure, Limcon, ETABS, IDEAStatica.
+## Yazılım Araçları
+
+SAP2000 Structural Analysis Software
+
+Comosys Structural Analysis Software
+
+Tekla Structures
+
+ETABS Structural Analysis Software
+
+IdeaStatica Connection Design Software
+
+Limcon Connection Design Software
+
+Hilti Profis Software
+
+Microsoft Office
+
+Navisworks Manage
+
+AutoCAD
+
+ProtaStructure and ProtaSteel Structural Analysis and Design Softwares
+
+Scia Engineer Structural Analysis Software
+
+## Uzmanlık ve Deneyim
+
+Project Management
+
+Structural Earthquake Engineering & Seismic Design
+
+Design of Steel Structures
+
+Piping Design / Primary & Secondary Supports of Pipelines
+
+Piping Isometric Drawings Check (Involved in iso-check team)
+
+Reading P&ID (Piping and Instrumentation Diagrams)
+
+Project Planning
+
+Design Management
+
+Project Coordination
+
+Bidding on Projects
+
+Preparing Technical Specifications & Tender Documents
+
+Test engineer for Software
+
+Technical Support Engineer and Consultancy
+
+Technical Trainer (B2B or Mass Training)
+
+Demonstration of Software
+
+Sales Engineer
 
 # Hobiler
 
-Tenis, Seyehat etmek
+Tenis, kürek, trekking, seyahat etmek,
