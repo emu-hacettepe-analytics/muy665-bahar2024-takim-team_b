@@ -17,3 +17,5 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 5.  [Ayça YAVUZ](/takim/ayca.qmd)
 
 6.  [Pınar KARABACAK](/takim/pinar.qmd)
+
+7.  [Yasemin AKTAŞ](/takim/yasemin.qmd)

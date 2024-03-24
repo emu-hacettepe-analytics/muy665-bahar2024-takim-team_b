@@ -222,21 +222,28 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: Team B",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nOrkun AYDIN\nMert CAGLAR\nOguzhan TURKYILMAZ\nDicle BAYDAR\nAyça YAVUZ\nPınar KARABACAK\nSebastian Szymański"
+    "text": "Takım Üyeleri\n\nOrkun AYDIN\nMert CAGLAR\nOguzhan TURKYILMAZ\nDicle BAYDAR\nAyça YAVUZ\nPınar KARABACAK\nYasemin AKTAŞ"
   },
   {
     "objectID": "portfolyo.html",
     "href": "portfolyo.html",
     "title": "Portfolyo",
     "section": "",
-    "text": "Bu sayfada, MUY665 İş Analitiği dersi 2023-2024 bahar dönemi boyunca yaptığımız analitik çalışmalarını sunmaktayız. Çalışmalarımıza sol menüden ulaşabilirsiniz.\n\n\n\n Back to top"
+    "text": "Bu sayfada, MUY665 İş Analitiği dersi 2023-2024 bahar dönemi boyunca yaptığımız analitik çalışmalarını sunmaktayız. Çalışmalarımıza sol menüden ulaşabilirsiniz.\n\n\n\n Back to top",
+    "crumbs": [
+      "Porfolyo",
+      "Portfolyo"
+    ]
   },
   {
     "objectID": "takim.html",
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nOrkun AYDIN\nMert Caglar\nDicle BAYDAR\nOguzhan Turkyilmaz\nAyça YAVUZ\nPınar KARABACAK\n\n\n\n\n\n Back to top"
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nOrkun AYDIN\nMert Caglar\nDicle BAYDAR\nOguzhan Turkyilmaz\nAyça YAVUZ\nPınar KARABACAK\nYasemin AKTAŞ\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Takım Üyeleri"
+    ]
   },
   {
     "objectID": "proje.html",
@@ -306,14 +313,22 @@
     "href": "portfolyo/calisma2.html",
     "title": "Çalışma 2",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz."
+    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 2"
+    ]
   },
   {
     "objectID": "portfolyo/calisma1.html",
     "href": "portfolyo/calisma1.html",
     "title": "Çalışma 1",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz."
+    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 1"
+    ]
   },
   {
     "objectID": "proje.html#veri-kaynağı",
@@ -376,28 +391,44 @@
     "href": "portfolyo/calisma1.html#a",
     "title": "Çalışma 1",
     "section": "(a)",
-    "text": "(a)\n\n1 + 1\n\n[1] 2"
+    "text": "(a)\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 1"
+    ]
   },
   {
     "objectID": "portfolyo/calisma2.html#a",
     "href": "portfolyo/calisma2.html#a",
     "title": "Çalışma 2",
     "section": "(a)",
-    "text": "(a)\n\n1 + 1\n\n[1] 2"
+    "text": "(a)\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 2"
+    ]
   },
   {
     "objectID": "portfolyo/calisma2.html#b",
     "href": "portfolyo/calisma2.html#b",
     "title": "Çalışma 2",
     "section": "(b)",
-    "text": "(b)"
+    "text": "(b)",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 2"
+    ]
   },
   {
     "objectID": "portfolyo/calisma1.html#b",
     "href": "portfolyo/calisma1.html#b",
     "title": "Çalışma 1",
     "section": "(b)",
-    "text": "(b)"
+    "text": "(b)",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 1"
+    ]
   },
   {
     "objectID": "takim/dusantadic.html",
@@ -579,5 +610,82 @@
     "title": "Pınar KARABACAK",
     "section": "İşler",
     "text": "İşler\n\nTEGAS METAL A.Ş. , Proje Mühendisi, Ocak 2022 - devam\nAYYILDIZ ENGINEERING, Kalite Mühendisi, Mayıs 2021 - Ocak 2022"
+  },
+  {
+    "objectID": "docs/project.html",
+    "href": "docs/project.html",
+    "title": "Project X",
+    "section": "",
+    "text": "Welcome to my project page.\nKeep an eye on this space to stay updated with my project activities.\n(The titles below are provided as examples; please feel free to adjust them as necessary.)"
+  },
+  {
+    "objectID": "docs/project.html#data-source",
+    "href": "docs/project.html#data-source",
+    "title": "Project X",
+    "section": "2.1 Data Source",
+    "text": "2.1 Data Source\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#general-information-about-data",
+    "href": "docs/project.html#general-information-about-data",
+    "title": "Project X",
+    "section": "2.2 General Information About Data",
+    "text": "2.2 General Information About Data\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#reason-of-choice",
+    "href": "docs/project.html#reason-of-choice",
+    "title": "Project X",
+    "section": "2.3 Reason of Choice",
+    "text": "2.3 Reason of Choice\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#preprocessing",
+    "href": "docs/project.html#preprocessing",
+    "title": "Project X",
+    "section": "2.4 Preprocessing",
+    "text": "2.4 Preprocessing\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#exploratory-data-analysis",
+    "href": "docs/project.html#exploratory-data-analysis",
+    "title": "Project X",
+    "section": "3.1 Exploratory Data Analysis",
+    "text": "3.1 Exploratory Data Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#trend-analysis",
+    "href": "docs/project.html#trend-analysis",
+    "title": "Project X",
+    "section": "3.2 Trend Analysis",
+    "text": "3.2 Trend Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#model-fitting",
+    "href": "docs/project.html#model-fitting",
+    "title": "Project X",
+    "section": "3.3 Model Fitting",
+    "text": "3.3 Model Fitting\nxxxxxx"
+  },
+  {
+    "objectID": "docs/project.html#results",
+    "href": "docs/project.html#results",
+    "title": "Project X",
+    "section": "3.4 Results",
+    "text": "3.4 Results\nxxxxxx"
+  },
+  {
+    "objectID": "takim/yasemin.html#işler",
+    "href": "takim/yasemin.html#işler",
+    "title": "Yasemin AKTAŞ",
+    "section": "İşler",
+    "text": "İşler\n\nProta Yazılım , Teknik Destek ve Test Yöneticisi, Temmuz 2018 - devam\nProta Mühendislik , Çelik Tasarım Mühendisi 2015-2018"
+  },
+  {
+    "objectID": "takim/yasemin.html#stajlar",
+    "href": "takim/yasemin.html#stajlar",
+    "title": "Yasemin AKTAŞ",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nKarayolları Genel Müdürlüğü 4. Bölge, Ulaşım Stajı 2011"
   }
 ]
