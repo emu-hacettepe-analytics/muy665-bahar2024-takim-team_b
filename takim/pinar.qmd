@@ -13,16 +13,18 @@ title: "Pınar KARABACAK"
 
 ## İşler
 
- 1. MILMAST YUKSELTME SISTEMLERI A.S., Proje Muhendisi, Şubat 2024- Devam
+1.  MILMAST YUKSELTME SISTEMLERI A.S., Proje Muhendisi, Şubat 2024- Devam
 
-2. TEGAS METAL A.Ş. , Proje Mühendisi, Ocak 2022 - Şubat 2024
+2.  TEGAS METAL A.Ş. , Proje Mühendisi, Ocak 2022 - Şubat 2024
 
 3.  AYYILDIZ ENGINEERING, Kalite Mühendisi, Kasım 2020 - Ocak 2022
 
+4.  EKINCILER DEMIR-CELIK A.S., Makine Mühendisi, Ocak 2018-Haziran 2018
+
 # Yetkinlikler
 
-AutoCad, Solidworks, Catia, SAP, SQL
+AutoCad, Solidworks, Catia, SAP, SQL, Minitab
 
 # Hobiler
 
-Bisiklet binmek, yüzmek, spor yapmak
+Bisiklet binmek, yüzmek, kitap okumak
