@@ -1,0 +1,101 @@
+---
+title: "Çalışma 1"
+---
+
+Bu çalışmada 3 görevimiz var. Bu görevlerin ilki 'Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler: Mustafa Baydoğan ve Erdi Daşdemir ile Karar Verme Süreçleri Üzerine Bir İnceleme' videosunun incelenmesi ve özetinin çıkarılmasıdır.
+
+## (a)
+
+Veri bilimi ve endüstri mühendisliği, karar verme mekanizmalarını destekleyen temel disiplinler olarak öne çıkmaktadır. Bir mühendisin temel görevi problem çözmektir. Bu hususta en çok üzerinde çalışılan konular “optimizasyon problemleri”, başlıca kullanılan yöntem de “matematiksel modelleme”dir. Karar verme süreci, verilerin ve analitik yaklaşımların birleşimiyle şekillenir. Bu süreç, aşağıdaki adımlardan oluşur:
+
+**1. Sorunun Tanımı ve Amaç Belirleme:** Karşılaşılan durum veya sorun tanımlanır ve çözüm için belirli1 bir amaç belirlenir. Örneğin, bir stok probleminin mevcut olduğu söyleniyor. Bunun için öncelikle stoktaki envanter kaydına bakılıp sorun olup olmadığı tespit edilir.
+
+**2. Olası Nedenlerin Belirlenmesi:** Sorun veya durumla ilgili olası nedenler tespit edilir. Gerçekten stokta ürün fazlaysa, bu sorun nedeni belirlenir. İyi planlanmaması mı yoksa ürünlerin taşınmaması mı stoktaki ürün fazlalığına neden oluyor, araştırılır.
+
+**3. Veri ve Bilgi Toplama:** Sorun veya durumla ilgili gerekli veriler ve bilgiler toplanır.  Nedenler anlaşıldıktan sonra, üretim süreleri ve planı incelenerek verilerin toplanması süreci gerçekleştirilir.
+
+**4. Alternatiflerin Belirlenmesi:** Olası çözüm yolları arasından en etkili, yararlı ve uygulanabilir olan seçilir. Veriler de toplandıktan sonra problem çözme gerçekleştirilir. Her zaman bir baseline/benchmark yöntem ve buna karşı daha iyi ve uygulanabilir alternatif yöntemler de olmalıdır.
+
+Bir örnek ile bu durumu açıklayacak olursak;yaş kerestenin resimlerinden eğrilik tahmininin yapılabilirliğidir. Problemin önemi, düz kerestenin \$10x değerindeyken, yamuk kerestenin \$2x değerinde olması gerçeğiyle vurgulanır. Kurutma işlemi öncesinde maliyeti az eylemlerle müdahale edilmesi halinde, bu sorunun önüne geçilebileceği belirtilir. Kerestelerin yamuk çıkmasının sebepleri arasında, kerestenin ağacın hangi bölgesinden kesildiği, dal çıkış noktaları ve ağacın yaşı gibi faktörler yer alır. Çözüm olarak, görüntü işleme teknikleri ve makine öğrenimi kullanılarak, verilerin analiz edilmesi ve geleneksel öğrenme yöntemlerine yönlendirilmesi önerilir. Bu yaklaşım, yorumlanabilirlik, yönlendirme, dirençlilik ve karar verme kabiliyeti gibi avantajlar sunar. Geleneksel öğrenmenin, derin öğrenmeye kıyasla yorumlanabilirliği bu öğrenme yöntemini ön plana çıkarır.
+
+Karar verme sürecinde tahminlerin doğruluğu kritik öneme sahiptir. Elektrik piyasası örneğinde, tahminlerin yanlış olması durumunda dengesizlikler yaşanır ve bu durum, yanlış tahminlerden kaynaklı olarak devletin müdahalesi ve cezai işlemlerle sonuçlanır.
+
+Veri analizi yaparken en temel kural dataya data gibi bakmamak ve kök neden analizi yaparak tahmin yöntemlerini kullanmaktır.
+
+**Geleceğe Yönelik Çıkarımlar:**
+
+-   Az veya kirli veri ile çalışmak, ciddi insan kaynakları gerektirir.
+
+-   Yapısal (bir veritabanında her satır bir örneğe denk gelecek şekilde tutulabilen veriler) ve yapısal olmayan veriler (resim, metin gibi farklı boyutlarda olabilen, veri tabanında tutulamayan veriler) için alternatif yaklaşımların geliştirilmesi gerekmektedir.Açık veri kaynakları, zengin bilgi içeriği sağlar.
+
+-   Veri biliminde yorumlanabilirlik, önemini korumaktadır.
+
+-   Karar verme süreçlerinde takviyeli öğrenme yaklaşımları giderek daha fazla önem kazanmaktadır.
+
+-   Karar verme süreçleri için kullanılan tahmin yöntemlerinin %100 doğruluk oranına sahip olması gerekmez. Nokta tahminlerin yanıltıcı olabileceği kabul edilir.
+
+Bu özet, Mustafa Baydoğan ve Erdi Daşdemir'in veri bilimi ve endüstri mühendisliği disiplinleri arasındaki ilişki üzerine gerçekleştirdikleri kapsamlı sohbeti, karar verme süreçlerinin önemini ve bu süreçlerde veri analitiğinin rolünü detaylı bir şekilde ele almaktadır.
+
+## (b)
+
+```{r}
+# Custom Summary Function
+
+custom_summary <- function(x) {
+  list( mean_value = mean(x), 
+        median_value = median(x), 
+        sd_value = sd(x), 
+        min_value = min(x), 
+        max_value = max(x) ) 
+  }
+
+# Alternative1: custom_summary function applied to mtcars dataset
+
+for (column_X in names(mtcars)) { 
+  if (is.numeric(mtcars[[column_X]])) { 
+    liste <- custom_summary(mtcars[[column_X]])
+    cat("for", column_X, ":\n") 
+    cat("mean:", liste$mean_value, "\t\t")
+    cat("median:", liste$median_value, "\t\t")
+    cat("standard deviation:", liste$sd_value, "\t\t")
+    cat("minimum:", liste$min_value, "\t\t")
+    cat("maximum:", liste$max_value, "\t\t")
+    cat("\n\n") 
+    } 
+  }
+
+# Alternative2: Apply usage:
+
+df <- mtcars; apply(df, 2,custom_summary)
+
+```
+
+## (c)
+
+```{r}
+
+library(dslabs)
+
+# upload na_example dataset
+data(na_example)
+na_example
+
+# NA counter
+na_count_before <- sum(is.na(na_example))
+cat("NA counter for original dataset:", na_count_before, "\n")
+
+# Creating new array without NAs
+no_nas <- na_example
+no_nas <- ifelse(is.na(na_example), 665, na_example)
+no_nas
+
+# NA counter for new array
+na_count_after <- sum(is.na(no_nas))
+cat("NA counter after changing dataset:", na_count_after, "\n")
+
+# 665 counter 
+counter_665_after <- sum(no_nas == 665)
+cat("665 counter for new dataset:", counter_665_after,"\n")
+
+```
+
