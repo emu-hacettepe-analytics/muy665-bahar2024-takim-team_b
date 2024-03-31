@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Team B Analitik Labı - Çalışma 1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Team B Analitik Labı</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Ana Sayfa</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../takim.html" rel="" target="">
+ <span class="menu-text">Takım Üyeleri</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../portfolyo.html" rel="" target="">
+ <span class="menu-text">Porfolyo</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../proje.html" rel="" target="">
+ <span class="menu-text">Proje</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+    <a href="https://github.com" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#a" id="toc-a" class="nav-link active" data-scroll-target="#a">(a)</a></li>
+  <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b">(b)</a></li>
+  <li><a href="#c" id="toc-c" class="nav-link" data-scroll-target="#c">(c)</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Çalışma 1</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Bu çalışmada 3 görevimiz var. Bu görevlerin ilki ‘Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler: Mustafa Baydoğan ve Erdi Daşdemir ile Karar Verme Süreçleri Üzerine Bir İnceleme’ videosunun incelenmesi ve özetinin çıkarılmasıdır.</p>
+<section id="a" class="level2">
+<h2 class="anchored" data-anchor-id="a">(a)</h2>
+<p>Veri bilimi ve endüstri mühendisliği, karar verme mekanizmalarını destekleyen temel disiplinler olarak öne çıkmaktadır. Bir mühendisin temel görevi problem çözmektir. Bu hususta en çok üzerinde çalışılan konular “optimizasyon problemleri”, başlıca kullanılan yöntem de “matematiksel modelleme”dir. Karar verme süreci, verilerin ve analitik yaklaşımların birleşimiyle şekillenir. Bu süreç, aşağıdaki adımlardan oluşur:</p>
+<p><strong>1. Sorunun Tanımı ve Amaç Belirleme:</strong> Karşılaşılan durum veya sorun tanımlanır ve çözüm için belirli1 bir amaç belirlenir. Örneğin, bir stok probleminin mevcut olduğu söyleniyor. Bunun için öncelikle stoktaki envanter kaydına bakılıp sorun olup olmadığı tespit edilir.</p>
+<p><strong>2. Olası Nedenlerin Belirlenmesi:</strong> Sorun veya durumla ilgili olası nedenler tespit edilir. Gerçekten stokta ürün fazlaysa, bu sorun nedeni belirlenir. İyi planlanmaması mı yoksa ürünlerin taşınmaması mı stoktaki ürün fazlalığına neden oluyor, araştırılır.</p>
+<p><strong>3. Veri ve Bilgi Toplama:</strong> Sorun veya durumla ilgili gerekli veriler ve bilgiler toplanır. &nbsp;Nedenler anlaşıldıktan sonra, üretim süreleri ve planı incelenerek verilerin toplanması süreci gerçekleştirilir.</p>
+<p><strong>4. Alternatiflerin Belirlenmesi:</strong> Olası çözüm yolları arasından en etkili, yararlı ve uygulanabilir olan seçilir. Veriler de toplandıktan sonra problem çözme gerçekleştirilir. Her zaman bir baseline/benchmark yöntem ve buna karşı daha iyi ve uygulanabilir alternatif yöntemler&nbsp;de&nbsp;olmalıdır.</p>
+<p>Bir örnek ile bu durumu açıklayacak olursak;yaş kerestenin resimlerinden eğrilik tahmininin yapılabilirliğidir. Problemin önemi, düz kerestenin $10x değerindeyken, yamuk kerestenin $2x değerinde olması gerçeğiyle vurgulanır. Kurutma işlemi öncesinde maliyeti az eylemlerle müdahale edilmesi halinde, bu sorunun önüne geçilebileceği belirtilir. Kerestelerin yamuk çıkmasının sebepleri arasında, kerestenin ağacın hangi bölgesinden kesildiği, dal çıkış noktaları ve ağacın yaşı gibi faktörler yer alır. Çözüm olarak, görüntü işleme teknikleri ve makine öğrenimi kullanılarak, verilerin analiz edilmesi ve geleneksel öğrenme yöntemlerine yönlendirilmesi önerilir. Bu yaklaşım, yorumlanabilirlik, yönlendirme, dirençlilik ve karar verme kabiliyeti gibi avantajlar sunar. Geleneksel öğrenmenin, derin öğrenmeye kıyasla yorumlanabilirliği bu öğrenme yöntemini ön plana çıkarır.</p>
+<p>Karar verme sürecinde tahminlerin doğruluğu kritik öneme sahiptir. Elektrik piyasası örneğinde, tahminlerin yanlış olması durumunda dengesizlikler yaşanır ve bu durum, yanlış tahminlerden kaynaklı olarak devletin müdahalesi ve cezai işlemlerle sonuçlanır.</p>
+<p>Veri analizi yaparken en temel kural dataya data gibi bakmamak ve kök neden analizi yaparak tahmin yöntemlerini kullanmaktır.</p>
+<p><strong>Geleceğe Yönelik Çıkarımlar:</strong></p>
+<ul>
+<li><p>Az veya kirli veri ile çalışmak, ciddi insan kaynakları gerektirir.</p></li>
+<li><p>Yapısal (bir veritabanında her satır bir örneğe denk gelecek şekilde tutulabilen veriler) ve yapısal olmayan veriler (resim, metin gibi farklı boyutlarda olabilen, veri tabanında tutulamayan veriler) için alternatif yaklaşımların geliştirilmesi gerekmektedir.Açık veri kaynakları, zengin bilgi içeriği sağlar.</p></li>
+<li><p>Veri biliminde yorumlanabilirlik, önemini korumaktadır.</p></li>
+<li><p>Karar verme süreçlerinde takviyeli öğrenme yaklaşımları giderek daha fazla önem kazanmaktadır.</p></li>
+<li><p>Karar verme süreçleri için kullanılan tahmin yöntemlerinin %100 doğruluk oranına sahip olması gerekmez. Nokta tahminlerin yanıltıcı olabileceği kabul edilir.</p></li>
+</ul>
+<p>Bu özet, Mustafa Baydoğan ve Erdi Daşdemir’in veri bilimi ve endüstri mühendisliği disiplinleri arasındaki ilişki üzerine gerçekleştirdikleri kapsamlı sohbeti, karar verme süreçlerinin önemini ve bu süreçlerde veri analitiğinin rolünü detaylı bir şekilde ele almaktadır.</p>
+</section>
+<section id="b" class="level2">
+<h2 class="anchored" data-anchor-id="b">(b)</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Custom Summary Function</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>custom_summary <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>( <span class="at">mean_value =</span> <span class="fu">mean</span>(x), </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">median_value =</span> <span class="fu">median</span>(x), </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">sd_value =</span> <span class="fu">sd</span>(x), </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">min_value =</span> <span class="fu">min</span>(x), </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">max_value =</span> <span class="fu">max</span>(x) ) </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternative1: custom_summary function applied to mtcars dataset</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (column_X <span class="cf">in</span> <span class="fu">names</span>(mtcars)) { </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.numeric</span>(mtcars[[column_X]])) { </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    liste <span class="ot">&lt;-</span> <span class="fu">custom_summary</span>(mtcars[[column_X]])</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"for"</span>, column_X, <span class="st">":</span><span class="sc">\n</span><span class="st">"</span>) </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"mean:"</span>, liste<span class="sc">$</span>mean_value, <span class="st">"</span><span class="sc">\t\t</span><span class="st">"</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"median:"</span>, liste<span class="sc">$</span>median_value, <span class="st">"</span><span class="sc">\t\t</span><span class="st">"</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"standard deviation:"</span>, liste<span class="sc">$</span>sd_value, <span class="st">"</span><span class="sc">\t\t</span><span class="st">"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"minimum:"</span>, liste<span class="sc">$</span>min_value, <span class="st">"</span><span class="sc">\t\t</span><span class="st">"</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"maximum:"</span>, liste<span class="sc">$</span>max_value, <span class="st">"</span><span class="sc">\t\t</span><span class="st">"</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>) </span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    } </span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>for mpg :
+mean: 20.09062      median: 19.2        standard deviation: 6.026948        minimum: 10.4       maximum: 33.9       
+
+for cyl :
+mean: 6.1875        median: 6       standard deviation: 1.785922        minimum: 4      maximum: 8      
+
+for disp :
+mean: 230.7219      median: 196.3       standard deviation: 123.9387        minimum: 71.1       maximum: 472        
+
+for hp :
+mean: 146.6875      median: 123         standard deviation: 68.56287        minimum: 52         maximum: 335        
+
+for drat :
+mean: 3.596563      median: 3.695       standard deviation: 0.5346787       minimum: 2.76       maximum: 4.93       
+
+for wt :
+mean: 3.21725       median: 3.325       standard deviation: 0.9784574       minimum: 1.513      maximum: 5.424      
+
+for qsec :
+mean: 17.84875      median: 17.71       standard deviation: 1.786943        minimum: 14.5       maximum: 22.9       
+
+for vs :
+mean: 0.4375        median: 0       standard deviation: 0.5040161       minimum: 0      maximum: 1      
+
+for am :
+mean: 0.40625       median: 0       standard deviation: 0.4989909       minimum: 0      maximum: 1      
+
+for gear :
+mean: 3.6875        median: 4       standard deviation: 0.7378041       minimum: 3      maximum: 5      
+
+for carb :
+mean: 2.8125        median: 2       standard deviation: 1.6152      minimum: 1      maximum: 8      </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternative2: Apply usage:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> mtcars; <span class="fu">apply</span>(df, <span class="dv">2</span>,custom_summary)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$mpg
+$mpg$mean_value
+[1] 20.09062
+
+$mpg$median_value
+[1] 19.2
+
+$mpg$sd_value
+[1] 6.026948
+
+$mpg$min_value
+[1] 10.4
+
+$mpg$max_value
+[1] 33.9
+
+
+$cyl
+$cyl$mean_value
+[1] 6.1875
+
+$cyl$median_value
+[1] 6
+
+$cyl$sd_value
+[1] 1.785922
+
+$cyl$min_value
+[1] 4
+
+$cyl$max_value
+[1] 8
+
+
+$disp
+$disp$mean_value
+[1] 230.7219
+
+$disp$median_value
+[1] 196.3
+
+$disp$sd_value
+[1] 123.9387
+
+$disp$min_value
+[1] 71.1
+
+$disp$max_value
+[1] 472
+
+
+$hp
+$hp$mean_value
+[1] 146.6875
+
+$hp$median_value
+[1] 123
+
+$hp$sd_value
+[1] 68.56287
+
+$hp$min_value
+[1] 52
+
+$hp$max_value
+[1] 335
+
+
+$drat
+$drat$mean_value
+[1] 3.596563
+
+$drat$median_value
+[1] 3.695
+
+$drat$sd_value
+[1] 0.5346787
+
+$drat$min_value
+[1] 2.76
+
+$drat$max_value
+[1] 4.93
+
+
+$wt
+$wt$mean_value
+[1] 3.21725
+
+$wt$median_value
+[1] 3.325
+
+$wt$sd_value
+[1] 0.9784574
+
+$wt$min_value
+[1] 1.513
+
+$wt$max_value
+[1] 5.424
+
+
+$qsec
+$qsec$mean_value
+[1] 17.84875
+
+$qsec$median_value
+[1] 17.71
+
+$qsec$sd_value
+[1] 1.786943
+
+$qsec$min_value
+[1] 14.5
+
+$qsec$max_value
+[1] 22.9
+
+
+$vs
+$vs$mean_value
+[1] 0.4375
+
+$vs$median_value
+[1] 0
+
+$vs$sd_value
+[1] 0.5040161
+
+$vs$min_value
+[1] 0
+
+$vs$max_value
+[1] 1
+
+
+$am
+$am$mean_value
+[1] 0.40625
+
+$am$median_value
+[1] 0
+
+$am$sd_value
+[1] 0.4989909
+
+$am$min_value
+[1] 0
+
+$am$max_value
+[1] 1
+
+
+$gear
+$gear$mean_value
+[1] 3.6875
+
+$gear$median_value
+[1] 4
+
+$gear$sd_value
+[1] 0.7378041
+
+$gear$min_value
+[1] 3
+
+$gear$max_value
+[1] 5
+
+
+$carb
+$carb$mean_value
+[1] 2.8125
+
+$carb$median_value
+[1] 2
+
+$carb$sd_value
+[1] 1.6152
+
+$carb$min_value
+[1] 1
+
+$carb$max_value
+[1] 8</code></pre>
+</div>
+</div>
+</section>
+<section id="c" class="level2">
+<h2 class="anchored" data-anchor-id="c">(c)</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># upload na_example dataset</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(na_example)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>na_example</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   [1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1
+  [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1
+  [49]  5 NA NA NA  1  1  5  1  3  1 NA  4  4  7  3  2 NA NA  1 NA  4  1  2  2
+  [73]  3  2  1  2  2  4  3  4  2  3  1  3  2  1  1  1  3  1 NA  3  1  2  2  1
+  [97]  2  2  1  1  4  1  1  2  3  3  2  2  3  3  3  4  1  1  1  2 NA  4  3  4
+ [121]  3  1  2  1 NA NA NA NA  1  5  1  2  1  3  5  3  2  2 NA NA NA NA  3  5
+ [145]  3  1  1  4  2  4  3  3 NA  2  3  2  6 NA  1  1  2  2  1  3  1  1  5 NA
+ [169] NA  2  4 NA  2  5  1  4  3  3 NA  4  3  1  4  1  1  3  1  1 NA NA  3  5
+ [193]  2  2  2  3  1  2  2  3  2  1 NA  2 NA  1 NA NA  2  1  1 NA  3 NA  1  2
+ [217]  2  1  3  2  2  1  1  2  3  1  1  1  4  3  4  2  2  1  4  1 NA  5  1  4
+ [241] NA  3 NA NA  1  1  5  2  3  3  2  4 NA  3  2  5 NA  2  3  4  6  2  2  2
+ [265] NA  2 NA  2 NA  3  3  2  2  4  3  1  4  2 NA  2  4 NA  6  2  3  1 NA  2
+ [289]  2 NA  1  1  3  2  3  3  1 NA  1  4  2  1  1  3  2  1  2  3  1 NA  2  3
+ [313]  3  2  1  2  3  5  5  1  2  3  3  1 NA NA  1  2  4 NA  2  1  1  1  3  2
+ [337]  1  1  3  4 NA  1  2  1  1  3  3 NA  1  1  3  5  3  2  3  4  1  4  3  1
+ [361] NA  2  1  2  2  1  2  2  6  1  2  4  5 NA  3  4  2  1  1  4  2  1  1  1
+ [385]  1  2  1  4  4  1  3 NA  3  3 NA  2 NA  1  2  1  1  4  2  1  4  4 NA  1
+ [409]  2 NA  3  2  2  2  1  4  3  6  1  2  3  1  3  2  2  2  1  1  3  2  1  1
+ [433]  1  3  2  2 NA  4  4  4  1  1 NA  4  3 NA  1  3  1  3  2  4  2  2  2  3
+ [457]  2  1  4  3 NA  1  4  3  1  3  2 NA  3 NA  1  3  1  4  1  1  1  2  4  3
+ [481]  1  2  2  2  3  2  3  1  1 NA  3  2  1  1  2 NA  2  2  2  3  3  1  1  2
+ [505] NA  1  2  1  1  3  3  1  3  1  1  1  1  1  2  5  1  1  2  2  1  1 NA  1
+ [529]  4  1  2  4  1  3  2 NA  1  1 NA  2  1  1  4  2  3  3  1  5  3  1  1  2
+ [553] NA  1  1  3  1  3  2  4 NA  2  3  2  1  2  1  1  1  2  2  3  1  5  2 NA
+ [577]  2 NA  3  2  2  2  1  5  3  2  3  1 NA  3  1  2  2  2  1  2  2  4 NA  6
+ [601]  1  2 NA  1  1  2  2  3 NA  3  2  3  3  4  2 NA  2 NA  4 NA  1  1  2  2
+ [625]  3  1  1  1  3 NA  2  5 NA  7  1 NA  4  3  3  1 NA  1  1  1  1  3  2  4
+ [649]  2  2  3 NA NA  1  4  3  2  2  2  3  2  4  2  2  4 NA NA NA  6  3  3  1
+ [673]  4  4  2  1 NA  1  6 NA  3  3  2  1  1  6 NA  1  5  1 NA  2  6  2 NA  4
+ [697]  1  3  1  2 NA  1  1  3  1  2  4  2  1  3  2  4  3  2  2  1  1  5  6  4
+ [721]  2  2  2  2  4 NA  1  2  2  2  2  4  5 NA NA NA  4  3  3  3  2  4  2  4
+ [745] NA NA NA NA  2  1 NA  2  4  3  2 NA  2  3  1  3  4 NA  1  2  1  2 NA  3
+ [769]  1  2  1  2  1  2  1  2  2  2  2  1  1  3  3  1  3  4  3 NA NA  4  2  3
+ [793]  2  1  3  2  4  2  2  3  1  2  4  3  3  4 NA  1  4  2  1  1  1  3  1  5
+ [817]  2  2  4  2 NA  1  3  1  2 NA  1  2  1  2  1 NA  1  3  2  3  2 NA  2  1
+ [841]  4  2 NA NA NA  2  4  2 NA NA  3  1 NA  5  5  2  2  2 NA  2  1  3  1  3
+ [865]  2  4  2  4 NA  4  1  2  3  2  3  3  2  3  2  2  2  1  3  2  4  2 NA  3
+ [889]  3  2  2 NA NA  3  2  1  2  4  1  1  1  1  4  3  2 NA  3  2 NA  1 NA  3
+ [913]  2  1  1  1  2 NA  2  2  3  3  2 NA NA  4  5  2  2  2  1  2  3  1  3  3
+ [937]  4  3 NA  1  1  1 NA  4  3  5  1  1  2 NA  2  2  2  2  5  2  2  3  1  2
+ [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1
+ [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NA counter</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>na_count_before <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(na_example))</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"NA counter for original dataset:"</span>, na_count_before, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>NA counter for original dataset: 145 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating new array without NAs</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>no_nas <span class="ot">&lt;-</span> na_example</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>no_nas <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(na_example), <span class="dv">665</span>, na_example)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>no_nas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   [1]   2   1   3   2   1   3   1   4   3   2   2 665   2   2   1   4 665   1
+  [19]   1   2   1   2   2   1   2   5 665   2   2   3   1   2   4   1   1   1
+  [37]   4   5   2   3   4   1   2   4   1   1   2   1   5 665 665 665   1   1
+  [55]   5   1   3   1 665   4   4   7   3   2 665 665   1 665   4   1   2   2
+  [73]   3   2   1   2   2   4   3   4   2   3   1   3   2   1   1   1   3   1
+  [91] 665   3   1   2   2   1   2   2   1   1   4   1   1   2   3   3   2   2
+ [109]   3   3   3   4   1   1   1   2 665   4   3   4   3   1   2   1 665 665
+ [127] 665 665   1   5   1   2   1   3   5   3   2   2 665 665 665 665   3   5
+ [145]   3   1   1   4   2   4   3   3 665   2   3   2   6 665   1   1   2   2
+ [163]   1   3   1   1   5 665 665   2   4 665   2   5   1   4   3   3 665   4
+ [181]   3   1   4   1   1   3   1   1 665 665   3   5   2   2   2   3   1   2
+ [199]   2   3   2   1 665   2 665   1 665 665   2   1   1 665   3 665   1   2
+ [217]   2   1   3   2   2   1   1   2   3   1   1   1   4   3   4   2   2   1
+ [235]   4   1 665   5   1   4 665   3 665 665   1   1   5   2   3   3   2   4
+ [253] 665   3   2   5 665   2   3   4   6   2   2   2 665   2 665   2 665   3
+ [271]   3   2   2   4   3   1   4   2 665   2   4 665   6   2   3   1 665   2
+ [289]   2 665   1   1   3   2   3   3   1 665   1   4   2   1   1   3   2   1
+ [307]   2   3   1 665   2   3   3   2   1   2   3   5   5   1   2   3   3   1
+ [325] 665 665   1   2   4 665   2   1   1   1   3   2   1   1   3   4 665   1
+ [343]   2   1   1   3   3 665   1   1   3   5   3   2   3   4   1   4   3   1
+ [361] 665   2   1   2   2   1   2   2   6   1   2   4   5 665   3   4   2   1
+ [379]   1   4   2   1   1   1   1   2   1   4   4   1   3 665   3   3 665   2
+ [397] 665   1   2   1   1   4   2   1   4   4 665   1   2 665   3   2   2   2
+ [415]   1   4   3   6   1   2   3   1   3   2   2   2   1   1   3   2   1   1
+ [433]   1   3   2   2 665   4   4   4   1   1 665   4   3 665   1   3   1   3
+ [451]   2   4   2   2   2   3   2   1   4   3 665   1   4   3   1   3   2 665
+ [469]   3 665   1   3   1   4   1   1   1   2   4   3   1   2   2   2   3   2
+ [487]   3   1   1 665   3   2   1   1   2 665   2   2   2   3   3   1   1   2
+ [505] 665   1   2   1   1   3   3   1   3   1   1   1   1   1   2   5   1   1
+ [523]   2   2   1   1 665   1   4   1   2   4   1   3   2 665   1   1 665   2
+ [541]   1   1   4   2   3   3   1   5   3   1   1   2 665   1   1   3   1   3
+ [559]   2   4 665   2   3   2   1   2   1   1   1   2   2   3   1   5   2 665
+ [577]   2 665   3   2   2   2   1   5   3   2   3   1 665   3   1   2   2   2
+ [595]   1   2   2   4 665   6   1   2 665   1   1   2   2   3 665   3   2   3
+ [613]   3   4   2 665   2 665   4 665   1   1   2   2   3   1   1   1   3 665
+ [631]   2   5 665   7   1 665   4   3   3   1 665   1   1   1   1   3   2   4
+ [649]   2   2   3 665 665   1   4   3   2   2   2   3   2   4   2   2   4 665
+ [667] 665 665   6   3   3   1   4   4   2   1 665   1   6 665   3   3   2   1
+ [685]   1   6 665   1   5   1 665   2   6   2 665   4   1   3   1   2 665   1
+ [703]   1   3   1   2   4   2   1   3   2   4   3   2   2   1   1   5   6   4
+ [721]   2   2   2   2   4 665   1   2   2   2   2   4   5 665 665 665   4   3
+ [739]   3   3   2   4   2   4 665 665 665 665   2   1 665   2   4   3   2 665
+ [757]   2   3   1   3   4 665   1   2   1   2 665   3   1   2   1   2   1   2
+ [775]   1   2   2   2   2   1   1   3   3   1   3   4   3 665 665   4   2   3
+ [793]   2   1   3   2   4   2   2   3   1   2   4   3   3   4 665   1   4   2
+ [811]   1   1   1   3   1   5   2   2   4   2 665   1   3   1   2 665   1   2
+ [829]   1   2   1 665   1   3   2   3   2 665   2   1   4   2 665 665 665   2
+ [847]   4   2 665 665   3   1 665   5   5   2   2   2 665   2   1   3   1   3
+ [865]   2   4   2   4 665   4   1   2   3   2   3   3   2   3   2   2   2   1
+ [883]   3   2   4   2 665   3   3   2   2 665 665   3   2   1   2   4   1   1
+ [901]   1   1   4   3   2 665   3   2 665   1 665   3   2   1   1   1   2 665
+ [919]   2   2   3   3   2 665 665   4   5   2   2   2   1   2   3   1   3   3
+ [937]   4   3 665   1   1   1 665   4   3   5   1   1   2 665   2   2   2   2
+ [955]   5   2   2   3   1   2   3 665   1   2 665 665   2 665   3   1   1   2
+ [973]   5   3   5   1   1   4 665   2   1   3   1   1   2   4   3   3   3 665
+ [991]   1   1   2   2   1   1   2   2 665   2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># NA counter for new array</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>na_count_after <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(no_nas))</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"NA counter after changing dataset:"</span>, na_count_after, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>NA counter after changing dataset: 0 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 665 counter </span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>counter_665_after <span class="ot">&lt;-</span> <span class="fu">sum</span>(no_nas <span class="sc">==</span> <span class="dv">665</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"665 counter for new dataset:"</span>, counter_665_after,<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>665 counter for new dataset: 145 </code></pre>
+</div>
+</div>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">EMU Hacettepe MUY665 - 2023-2024 Bahar</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
