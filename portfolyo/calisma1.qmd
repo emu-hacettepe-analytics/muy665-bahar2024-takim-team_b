@@ -38,6 +38,16 @@ Bu özet, Mustafa Baydoğan ve Erdi Daşdemir'in veri bilimi ve endüstri mühen
 
 ## (b)
 
-{r}
+```{r}
+# Custom Summary Function
 
-1 + 1
+custom_summary <- function(x) { list( mean_value = mean(x), median_value = median(x), sd_value = sd(x), min_value = min(x), max_value = max(x) ) }
+
+# Fonksiyonu mtcars Veri Setine Uygulama
+
+for (column_X in names(mtcars)) { if (is.numeric(mtcars[[column_X]])) { cat("for", column_X, ":\n") print(custom_summary(mtcars[[column_X]])) cat("\n") } }
+
+# Apply usage:
+
+df <- mtcars; apply(df, 2,custom_summary)
+```
