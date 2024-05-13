@@ -38,7 +38,9 @@ Bu özet, Mustafa Baydoğan ve Erdi Daşdemir'in veri bilimi ve endüstri mühen
 
 ## (b)
 
-```{r}
+
+
+```{r }
 # Custom Summary Function
 
 custom_summary <- function(x) {
