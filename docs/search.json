@@ -107,51 +107,51 @@
   {
     "objectID": "proje.html",
     "href": "proje.html",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Kaza Trendleri: Bölgesel Analiz ve 2021-2022 Kaza Kusur Raporu Analizi",
     "section": "",
-    "text": "Proje sayfamıza hoş geldiniz.\nProjemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin."
+    "text": "Proje sayfamıza hoş geldiniz.\nProjemizle ilgili güncellemelerden haberdar olmak için bu alanı takip ediniz."
   },
   {
     "objectID": "proje.html#veri-kaynağı",
     "href": "proje.html#veri-kaynağı",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Kaza Trendleri: Bölgesel Analiz ve 2021-2022 Kaza Kusur Raporu Analizi",
     "section": "2.1 Veri Kaynağı",
-    "text": "2.1 Veri Kaynağı\nVeriler Tüik resmi sitesinden alınmıştır. Verilere ulaşmak için linke tıklayabilirsiniz."
+    "text": "2.1 Veri Kaynağı\nVeriler TÜİK resmi sitesinden alınmıştır. Verilere ulaşmak için linke tıklayabilirsiniz."
   },
   {
     "objectID": "proje.html#veri-hakkında-genel-bilgiler",
     "href": "proje.html#veri-hakkında-genel-bilgiler",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Kaza Trendleri: Bölgesel Analiz ve 2021-2022 Kaza Kusur Raporu Analizi",
     "section": "2.2 Veri Hakkında Genel Bilgiler",
-    "text": "2.2 Veri Hakkında Genel Bilgiler\n[2022 yılı için İlgili veri seti için linke tıklayabilir ve indirebilirsiniz.]\n[2021 yılı için İlgili veri seti için linke tıklayabilir ve indirebilirsiniz.]"
+    "text": "2.2 Veri Hakkında Genel Bilgiler\nVeri kaynağından alınan ve düzenlenen veriler aşağıdaki gibidir:\nİllere Göre Trafik Kaza Ölü ve Yaralı Sayısı 2021\nİllere Göre Trafik Kaza Ölü ve Yaralı Sayısı 2022\nÖlümlü ve Yaralanmalı Kazaya Neden Olan Kusurlar 2021\nÖlümlü ve Yaralanmalı Kazaya Neden Olan Kusurlar 2022\nTrafikte Kayıtlı Araç Kaza Ölü ve Yaralı Sayısı 2009-2022"
   },
   {
     "objectID": "proje.html#tercih-sebebi",
     "href": "proje.html#tercih-sebebi",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Kaza Trendleri: Bölgesel Analiz ve 2021-2022 Kaza Kusur Raporu Analizi",
     "section": "2.3 Tercih Sebebi",
-    "text": "2.3 Tercih Sebebi\nxxxxxx"
+    "text": "2.3 Tercih Sebebi\nTürkiye’deki trafik kazalarının sebeplerini ve etkilerini detaylı bir şekilde incelemek ve analiz etmek için bu projeyi tercih ettik. Trafik kazaları, yalnızca Türkiye için değil, dünya genelinde ciddi bir halk sağlığı sorunu oluşturmaktadır. Her yıl binlerce insan, trafik kazalarında hayatını kaybetmekte veya yaralanmaktadır. Bu kazalar, aynı zamanda büyük ekonomik kayıplara ve sosyal sorunlara yol açmaktadır."
   },
   {
     "objectID": "proje.html#ön-işleme",
     "href": "proje.html#ön-işleme",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Kaza Trendleri: Bölgesel Analiz ve 2021-2022 Kaza Kusur Raporu Analizi",
     "section": "2.4 Ön İşleme",
-    "text": "2.4 Ön İşleme\nxxxxxx"
+    "text": "2.4 Ön İşleme\nTÜİK websitesi üzerinden proje kapsamı için elde edilen veriler 2009-2022 yıllarını kapsamaktadır. Veri aralığı bir yıllık olup eksik veri bulunmamaktadır. Bu nedenle veriler analiz için kullanılırken herhangi bir interpolasyon veya ekstrapolasyon işlemleri uygulanmamıştır. Ayrıca sayısal verilerde herhangi bir işlem yapılma gereksinimi duyulmamıştır. Bunun yanında, ilgili .xls dosyalarında kullanılan satır isimleri ve formatları analiz kodunun anlayabileceği şekilde olmadığından dolayı, sütun isimlerinde sadeleştirmeler yapılmıştır. Analiz yapılırken verilerin karşılaştırılabilmesi için bazı sütunlar (yıl, oran vb.) oluşturulup veri setlerine eklenmiştir. Bu eklemeler “analiz” kısmında yer alan kod parçalarının içerisinde de görüntülenebilir"
   },
   {
     "objectID": "proje.html#keşifsel-veri-analizi",
     "href": "proje.html#keşifsel-veri-analizi",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Kaza Trendleri: Bölgesel Analiz ve 2021-2022 Kaza Kusur Raporu Analizi",
     "section": "3.1 Keşifsel Veri Analizi",
-    "text": "3.1 Keşifsel Veri Analizi\nxxxxxx"
+    "text": "3.1 Keşifsel Veri Analizi\nKeşifsel veri analizi (Exploratory Data Analysis, EDA), verilerin özetlenmesi, yapılarının ve ilişkilerinin anlaşılması amacıyla yapılan istatistiksel yöntemler ve görselleştirme tekniklerini içeren bir veri analizi sürecidir. Veri setleri üzerinde yapılan bu analiz, verilerin ana özelliklerini ortaya çıkarmayı, modelleme veya hipotez testi öncesinde önemli içgörüler sağlamayı amaçlar.\nKeşifsel Veri Analizi’nin Temel Bileşenleri aşağıdaki gibi sınıflandırılabilir.\nVeri Temizleme: Verilerin analize uygun hale getirilmesi için eksik verilerin, aykırı değerlerin ve tekrar eden bilgilerin düzeltilmesi veya temizlenmesi sürecidir. Bu projede kullanılan verilerde sayısal temizleme ve düzeltme işlemlerine gerek duyulmamıştır.\nÖzet İstatistikler: Ortalama, medyan, mod, maksimum ve minimum değerler gibi temel istatistiksel ölçüler, veri setinin genel özelliklerini yansıtır ve analize genel bir bakış sağlar. Bölgesel analiz yapılırken değerlerin özet istatistiklerinden faydalanılmıştır. Bu değerler box plot grafiğinde açıkça görülmekte ve yorumlanabilmektedir.\nGörselleştirme: Veri setlerini anlamak için grafik ve çizelgeler kullanılır. Histogram, kutu grafiği (box plot), dağılım grafiği (scatter plot) ve çubuk grafikler gibi görsel araçlar, verilerin dağılımını, trendleri ve potansiyel ilişkileri gözlemlemek için etkilidir. Bu proje kapsamında line, bar ve box plot görselleştirme yöntemlerinden faydalanılmıştır.\nGruplama ve Segmentasyon: Verileri benzer özelliklere göre gruplandırmak, demografik gruplar veya belirli özellikler etrafında verileri segmente etmek gibi işlemler de EDA’nın bir parçasıdır. Bu projede verileri gruplandırmak için coğrafi bölge ve yıl kategorileri kullanılmıştır."
   },
   {
     "objectID": "proje.html#trend-analizi",
     "href": "proje.html#trend-analizi",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Kaza Trendleri: Bölgesel Analiz ve 2021-2022 Kaza Kusur Raporu Analizi",
     "section": "3.2 Trend Analizi",
-    "text": "3.2 Trend Analizi\nxxxxxx"
+    "text": "3.2 Trend Analizi\nTrend analizi, zaman içindeki veri noktalarının gözlemlenen davranışlarını inceleyerek gelecekteki hareketleri veya eğilimleri tahmin etmeyi amaçlayan bir veri analiz yöntemidir. Trend analizi, verilerdeki yükseliş, düşüş veya durağanlık gibi uzun vadeli hareketleri belirlemek için yapılan istatistiksel analizler içerir. Bu projede geleceğe yönelik herhangi bir trend analizi yapılmamıştır. Verilerin geleceğe dayalı değerleri tahmin edilmeye çalışılmamıştır."
   },
   {
     "objectID": "proje.html#model-uydurma",
@@ -163,9 +163,9 @@
   {
     "objectID": "proje.html#sonuçlar",
     "href": "proje.html#sonuçlar",
-    "title": "Proje X (proje adını yazınız)",
-    "section": "3.4 Sonuçlar",
-    "text": "3.4 Sonuçlar\nxxxxxx"
+    "title": "Türkiye’de Kaza Trendleri: Bölgesel Analiz ve 2021-2022 Kaza Kusur Raporu Analizi",
+    "section": "3.3 Sonuçlar",
+    "text": "3.3 Sonuçlar\nxxxxxx"
   },
   {
     "objectID": "takim/dicle.html#işler",

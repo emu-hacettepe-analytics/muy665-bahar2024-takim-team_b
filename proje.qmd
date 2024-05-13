@@ -1,53 +1,64 @@
 ---
-title: "Proje X (proje adını yazınız)"
+title: "Türkiye'de Kaza Trendleri: Bölgesel Analiz ve 2021-2022 Kaza Kusur Raporu Analizi"
 number-sections: true
 ---
 
 **Proje sayfamıza hoş geldiniz.**
 
-*Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
+*Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip ediniz.*
 
 # Proje Genel Bakış ve Kapsamı
 
-xxxxxx
+Bu projede, Türkiye genelindeki trafik kazalarının sıklığı, nedenleri ve sonuçları ele alınmaktadır. Trafik kazaları, toplum sağlığı, ekonomik kayıplar ve sosyal etkiler açısından ciddi sorunlar oluşturmakta, bu yüzden bu kazaların kökenlerini anlamak ve önleyici stratejiler geliştirmek büyük önem taşımaktadır. Proje, 2021 ve 2022 yılları arasında gerçekleşen kazalara odaklanarak, kaza kusurlarını ve bu kusurların yıllık değişimlerini detaylı bir şekilde incelemektedir.
+
+Proje, Türkiye İstatistik Kurumu (TÜİK) verileri kullanarak, belirli kaza türlerini ve bunların yıllık dağılımını analiz eder. En yaygın kaza kusurlarını belirlemek, hangi faktörlerin daha baskın olduğunu anlamak ve bunların kazalara etkisini değerlendirmekte kullanılması hedeflenir. Bu analiz, sürücü davranışları, yol koşulları, trafik işaretlerinin yeterliliği ve araçların teknik durumları gibi çeşitli faktörleri içerir.
+
+Aynı zamanda rapor kapsamında Türkiye'nin farklı bölgelerindeki kaza oranları ve sebepleri karşılaştırmalı olarak incelenerek belirli bölgelerdeki özgül risk faktörlerini ve kaza yoğunluğunu anlaşılmaktadır. Rapor kapsamında elde edilen bilgilere göre kazaları azaltmak için önleme stratejileri geliştirilebilir. Bu önlemler, eğitim programları, yasal düzenlemeler, altyapı iyileştirmeleri ve kamusal farkındalık kampanyalarını içerebilir.
+
+Bu proje kapsamında yapılan değerlendirmeler kazaların daha iyi anlaşılması, etkili önlemlerin alınmasını ve trafik güvenliği politikalarının daha bilinçli şekilde şekillendirilmesini sağlayacaktır.
 
 # Veri
 
-xxxxxx
-
 ## Veri Kaynağı
 
-Veriler Tüik resmi sitesinden alınmıştır. Verilere ulaşmak için [linke](https://data.tuik.gov.tr/Bulten/Index?p=Karayolu-Trafik-Kaza-Istatistikleri-2022-49513#:~:text=T%C3%9C%C4%B0K%20Kurumsal&text=%C3%9Clkemiz%20karayolu%20a%C4%9F%C4%B1nda%202022%20y%C4%B1l%C4%B1nda,ise%20%C3%B6l%C3%BCml%C3%BC%20yaralanmal%C4%B1%20trafik%20kazas%C4%B1d%C4%B1r) tıklayabilirsiniz.
+Veriler TÜİK resmi sitesinden alınmıştır. Verilere ulaşmak için [linke](https://data.tuik.gov.tr/Bulten/Index?p=Karayolu-Trafik-Kaza-Istatistikleri-2022-49513#:~:text=T%C3%9C%C4%B0K%20Kurumsal&text=%C3%9Clkemiz%20karayolu%20a%C4%9F%C4%B1nda%202022%20y%C4%B1l%C4%B1nda,ise%20%C3%B6l%C3%BCml%C3%BC%20yaralanmal%C4%B1%20trafik%20kazas%C4%B1d%C4%B1r) tıklayabilirsiniz.
 
 ## Veri Hakkında Genel Bilgiler
 
-[\[2022 yılı için İlgili veri seti için linke tıklayabilir ve indirebilirsiniz.\]](https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls)
-
-[\[2021 yılı için İlgili veri seti için linke tıklayabilir ve indirebilirsiniz.\]](https://data.tuik.gov.tr/Bulten/Index?p=Karayolu-Trafik-Kaza-Istatistikleri-2021-45658)
+**Veri kaynağından alınan ve düzenlenen veriler aşağıdaki gibidir: \
+**[İllere Göre Trafik Kaza Ölü ve Yaralı Sayısı 2021](https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/illere_gore_trafik_kaza_olu_ve_yarali_sayisi_2021.xls)\
+[İllere Göre Trafik Kaza Ölü ve Yaralı Sayısı 2022](https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/illere_gore_trafik_kaza_olu_ve_yarali_sayisi_2022.xls)\
+[Ölümlü ve Yaralanmalı Kazaya Neden Olan Kusurlar 2021](https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/olumlu_yaralanmali_kazaya_neden_olan_kusurlar_2021.xls)\
+[Ölümlü ve Yaralanmalı Kazaya Neden Olan Kusurlar 2022](https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/olumlu_yaralanmali_kazaya_neden_olan_kusurlar_2022.xls)\
+[Trafikte Kayıtlı Araç Kaza Ölü ve Yaralı Sayısı 2009-2022](https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls)
 
 ## Tercih Sebebi
 
-xxxxxx
+Türkiye'deki trafik kazalarının sebeplerini ve etkilerini detaylı bir şekilde incelemek ve analiz etmek için bu projeyi tercih ettik. Trafik kazaları, yalnızca Türkiye için değil, dünya genelinde ciddi bir halk sağlığı sorunu oluşturmaktadır. Her yıl binlerce insan, trafik kazalarında hayatını kaybetmekte veya yaralanmaktadır. Bu kazalar, aynı zamanda büyük ekonomik kayıplara ve sosyal sorunlara yol açmaktadır.
 
 ## Ön İşleme
 
-xxxxxx
+TÜİK websitesi üzerinden proje kapsamı için elde edilen veriler 2009-2022 yıllarını kapsamaktadır. Veri aralığı bir yıllık olup eksik veri bulunmamaktadır. Bu nedenle veriler analiz için kullanılırken herhangi bir interpolasyon veya ekstrapolasyon işlemleri uygulanmamıştır. Ayrıca sayısal verilerde herhangi bir işlem yapılma gereksinimi duyulmamıştır. Bunun yanında, ilgili .xls dosyalarında kullanılan satır isimleri ve formatları analiz kodunun anlayabileceği şekilde olmadığından dolayı, sütun isimlerinde sadeleştirmeler yapılmıştır. Analiz yapılırken verilerin karşılaştırılabilmesi için bazı sütunlar (yıl, oran vb.) oluşturulup veri setlerine eklenmiştir. Bu eklemeler "analiz" kısmında yer alan kod parçalarının içerisinde de görüntülenebilir
 
 # Analiz
 
-xxxxxx
-
 ## Keşifsel Veri Analizi
 
-xxxxxx
+Keşifsel veri analizi (Exploratory Data Analysis, EDA), verilerin özetlenmesi, yapılarının ve ilişkilerinin anlaşılması amacıyla yapılan istatistiksel yöntemler ve görselleştirme tekniklerini içeren bir veri analizi sürecidir. Veri setleri üzerinde yapılan bu analiz, verilerin ana özelliklerini ortaya çıkarmayı, modelleme veya hipotez testi öncesinde önemli içgörüler sağlamayı amaçlar.
+
+Keşifsel Veri Analizi'nin Temel Bileşenleri aşağıdaki gibi sınıflandırılabilir.
+
+**Veri Temizleme:** Verilerin analize uygun hale getirilmesi için eksik verilerin, aykırı değerlerin ve tekrar eden bilgilerin düzeltilmesi veya temizlenmesi sürecidir. Bu projede kullanılan verilerde sayısal temizleme ve düzeltme işlemlerine gerek duyulmamıştır.
+
+**Özet İstatistikler:** Ortalama, medyan, mod, maksimum ve minimum değerler gibi temel istatistiksel ölçüler, veri setinin genel özelliklerini yansıtır ve analize genel bir bakış sağlar. Bölgesel analiz yapılırken değerlerin özet istatistiklerinden faydalanılmıştır. Bu değerler box plot grafiğinde açıkça görülmekte ve yorumlanabilmektedir.
+
+**Görselleştirme:** Veri setlerini anlamak için grafik ve çizelgeler kullanılır. Histogram, kutu grafiği (box plot), dağılım grafiği (scatter plot) ve çubuk grafikler gibi görsel araçlar, verilerin dağılımını, trendleri ve potansiyel ilişkileri gözlemlemek için etkilidir. Bu proje kapsamında line, bar ve box plot görselleştirme yöntemlerinden faydalanılmıştır.
+
+**Gruplama ve Segmentasyon:** Verileri benzer özelliklere göre gruplandırmak, demografik gruplar veya belirli özellikler etrafında verileri segmente etmek gibi işlemler de EDA'nın bir parçasıdır. Bu projede verileri gruplandırmak için coğrafi bölge ve yıl kategorileri kullanılmıştır.
 
 ## Trend Analizi
 
-xxxxxx
-
-## Model Uydurma
-
-xxxxxx
+Trend analizi, zaman içindeki veri noktalarının gözlemlenen davranışlarını inceleyerek gelecekteki hareketleri veya eğilimleri tahmin etmeyi amaçlayan bir veri analiz yöntemidir. Trend analizi, verilerdeki yükseliş, düşüş veya durağanlık gibi uzun vadeli hareketleri belirlemek için yapılan istatistiksel analizler içerir. Bu projede geleceğe yönelik herhangi bir trend analizi yapılmamıştır. Verilerin geleceğe dayalı değerleri tahmin edilmeye çalışılmamıştır.
 
 ## Sonuçlar
 
