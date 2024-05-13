@@ -43,14 +43,61 @@ Bu özet, Mustafa Baydoğan ve Erdi Daşdemir'in veri bilimi ve endüstri mühen
 ```{r }
 # Custom Summary Function
 
-custom_summary <- function(x) { list( mean_value = mean(x), median_value = median(x), sd_value = sd(x), min_value = min(x), max_value = max(x) ) }
+custom_summary <- function(x) {
+  list( mean_value = mean(x), 
+        median_value = median(x), 
+        sd_value = sd(x), 
+        min_value = min(x), 
+        max_value = max(x) ) 
+  }
 
-# Fonksiyonu mtcars Veri Setine Uygulama
+# Alternative1: custom_summary function applied to mtcars dataset
 
-for (column_X in names(mtcars)) { if (is.numeric(mtcars[[column_X]])) { cat("for", column_X, ":\n") print(custom_summary(mtcars[[column_X]])) cat("\n") } }
+for (column_X in names(mtcars)) { 
+  if (is.numeric(mtcars[[column_X]])) { 
+    liste <- custom_summary(mtcars[[column_X]])
+    cat("for", column_X, ":\n") 
+    cat("mean:", liste$mean_value, "\t\t")
+    cat("median:", liste$median_value, "\t\t")
+    cat("standard deviation:", liste$sd_value, "\t\t")
+    cat("minimum:", liste$min_value, "\t\t")
+    cat("maximum:", liste$max_value, "\t\t")
+    cat("\n\n") 
+    } 
+  }
 
-# Apply usage:
+# Alternative2: Apply usage:
 
 df <- mtcars; apply(df, 2,custom_summary)
 
 ```
+
+## (c)
+
+```{r}
+
+library(dslabs)
+
+# upload na_example dataset
+data(na_example)
+na_example
+
+# NA counter
+na_count_before <- sum(is.na(na_example))
+cat("NA counter for original dataset:", na_count_before, "\n")
+
+# Creating new array without NAs
+no_nas <- na_example
+no_nas <- ifelse(is.na(na_example), 665, na_example)
+no_nas
+
+# NA counter for new array
+na_count_after <- sum(is.na(no_nas))
+cat("NA counter after changing dataset:", na_count_after, "\n")
+
+# 665 counter 
+counter_665_after <- sum(no_nas == 665)
+cat("665 counter for new dataset:", counter_665_after,"\n")
+
+```
+
