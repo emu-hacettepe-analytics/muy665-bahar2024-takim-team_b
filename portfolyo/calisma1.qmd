@@ -38,7 +38,9 @@ Bu özet, Mustafa Baydoğan ve Erdi Daşdemir'in veri bilimi ve endüstri mühen
 
 ## (b)
 
-```{r}
+
+
+```{r }
 # Custom Summary Function
 
 custom_summary <- function(x) { list( mean_value = mean(x), median_value = median(x), sd_value = sd(x), min_value = min(x), max_value = max(x) ) }
@@ -50,4 +52,5 @@ for (column_X in names(mtcars)) { if (is.numeric(mtcars[[column_X]])) { cat("for
 # Apply usage:
 
 df <- mtcars; apply(df, 2,custom_summary)
+
 ```
