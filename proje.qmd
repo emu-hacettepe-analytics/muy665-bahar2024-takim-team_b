@@ -25,7 +25,7 @@ Veriler TÜİK resmi sitesinden alınmıştır. Verilere ulaşmak için [linke](
 
 ## Veri Hakkında Genel Bilgiler
 
-**Veri kaynağından alınan ve düzenlenen veriler aşağıdaki gibidir: \
+**Veri kaynağından alınan ve düzenlenen veriler aşağıdaki gibidir:\
 **[İllere Göre Trafik Kaza Ölü ve Yaralı Sayısı 2021](https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/illere_gore_trafik_kaza_olu_ve_yarali_sayisi_2021.xls)\
 [İllere Göre Trafik Kaza Ölü ve Yaralı Sayısı 2022](https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/illere_gore_trafik_kaza_olu_ve_yarali_sayisi_2022.xls)\
 [Ölümlü ve Yaralanmalı Kazaya Neden Olan Kusurlar 2021](https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/olumlu_yaralanmali_kazaya_neden_olan_kusurlar_2021.xls)\
@@ -60,9 +60,73 @@ Keşifsel Veri Analizi'nin Temel Bileşenleri aşağıdaki gibi sınıflandırı
 
 Trend analizi, zaman içindeki veri noktalarının gözlemlenen davranışlarını inceleyerek gelecekteki hareketleri veya eğilimleri tahmin etmeyi amaçlayan bir veri analiz yöntemidir. Trend analizi, verilerdeki yükseliş, düşüş veya durağanlık gibi uzun vadeli hareketleri belirlemek için yapılan istatistiksel analizler içerir. Bu projede geleceğe yönelik herhangi bir trend analizi yapılmamıştır. Verilerin geleceğe dayalı değerleri tahmin edilmeye çalışılmamıştır.
 
-## Sonuçlar
+## Analiz Sonuçları
+**2009-2022 Yıllarına Ait Trafiğe Kayıtlı Toplam Araç:** 
+```{r}
+#| code-fold: true
+#| code-summary: "Kodu görüntüle"
+# Gerekli Kütüphaneler
+install.packages("tidyverse")  # Veri işleme ve görselleştirme
+install.packages("readxl")     # Excel dosyalarını okuma
+install.packages("ggplot2")    # Görselleştirme
+install.packages("gridExtra")    # Görselleştirme (subplot)
 
-xxxxxx
+library(tidyverse)
+library(readxl)
+library(ggplot2)
+library(gridExtra)
+
+# Veriyi okuma
+total_2009_2022 <- read_excel("trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls")
+iller_2022 <- read_excel("illere_gore_trafik_kaza_olu_ve_yarali_sayisi_2022.xls")
+iller_2021 <- read_excel("illere_gore_trafik_kaza_olu_ve_yarali_sayisi_2021.xls")
+kusurlar_2022 <- read_excel("olumlu_yaralanmali_kazaya_neden_olan_kusurlar_2022.xls")
+kusurlar_2021 <- read_excel("olumlu_yaralanmali_kazaya_neden_olan_kusurlar_2021.xls")
+
+# Veri (sütun) isimlerini R tarafından okunabilir şekilde düzünleme
+names(total_2009_2022) <- make.names(names(total_2009_2022), unique = TRUE)
+names(iller_2022) <- make.names(names(iller_2022), unique = TRUE)
+names(iller_2021) <- make.names(names(iller_2021), unique = TRUE)
+names(kusurlar_2022) <- make.names(names(kusurlar_2022), unique = TRUE)
+names(kusurlar_2021) <- make.names(names(kusurlar_2021), unique = TRUE)
+# Türkiye'nin coğrafi bölgelerine göre şehirlerin listesini oluşturma
+turkiye_bolgeler <- list(
+  "Marmara" = c("İstanbul", "Kocaeli", "Bursa", "Balıkesir", "Çanakkale", "Yalova", "Bilecik", "Edirne", "Kırklareli", "Tekirdağ", "Sakarya"),
+  "Ege" = c("İzmir", "Aydın", "Muğla", "Manisa", "Denizli", "Uşak", "Afyonkarahisar", "Kütahya"),
+  "Akdeniz" = c("Antalya", "Mersin", "Adana", "Hatay", "Isparta", "Burdur", "Osmaniye", "Kahramanmaraş"),
+  "İç Anadolu" = c("Ankara", "Konya", "Eskişehir", "Kayseri", "Nevşehir", "Kırşehir", "Aksaray", "Kırıkkale", "Yozgat", "Niğde", "Karaman", "Sivas", "Çankırı"),
+  "Doğu Anadolu" = c("Van", "Erzurum", "Ağrı", "Malatya", "Bingöl", "Elazığ", "Tunceli", "Erzincan", "Muş", "Hakkari", "Iğdır", "Ardahan", "Bitlis", "Şırnak", "Kars"),
+  "Güneydoğu Anadolu" = c("Diyarbakır", "Şanlıurfa", "Gaziantep", "Mardin", "Adıyaman", "Kilis", "Batman", "Siirt"),
+  "Karadeniz" = c("Zonguldak", "Bartın", "Karabük", "Kastamonu", "Sinop","Samsun", "Ordu", "Giresun", "Trabzon", "Rize", "Artvin", "Bolu", "Çorum", "Tokat", "Amasya", "Bayburt", "Gümüşhane", "Düzce")
+)
+
+# Şehirleri bölgelere göre ayırma (fonksiyon)
+bolge_bolme <- function(province) {
+  bolge <- NA
+  for (bolge_adi in names(turkiye_bolgeler)) {
+    if (province %in% turkiye_bolgeler[[bolge_adi]]) {
+      bolge <- bolge_adi
+      break
+    }
+  }
+  return(bolge)
+}
+
+# Fonksiyonu listelere uygulama
+iller_2021$Region <- sapply(iller_2021$X.Province, bolge_bolme)
+iller_2022$Region <- sapply(iller_2022$X.Province, bolge_bolme)
+
+# Verinin kısa özeti
+head(total_2009_2022, 14)  # İlk birkaç satırı inceleme
+
+
+# Line Plot - Araç Sayılarının Yıllara Göre Değişimi
+ggplot(total_2009_2022, aes(x = Year, y = Number.of.vehicles.registered.to.traffic, group = 1)) +
+  geom_line(color = "blue", size = 1) +
+  geom_point(size = 2) +
+  labs(title = "Yıllara Göre Trafiğe Kayıtlı Araç Sayısı", x = "Yıl", y = "Araç Sayısı")
+
+```
 
 # Sonuçlar ve Ana Çıkarımlar
 
