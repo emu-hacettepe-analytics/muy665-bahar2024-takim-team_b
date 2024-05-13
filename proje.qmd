@@ -21,7 +21,7 @@ Veriler Tüik resmi sitesinden alınmıştır.Verilere ulaşmak için linke tık
 
 ## Veri Hakkında Genel Bilgiler
 
-\[İlgili veri seti için linke tıklayabilir ve indirebilirsiniz.\](<https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls>){.download-button}
+\\\[İlgili veri seti için linke tıklayabilir ve indirebilirsiniz.\\\](<https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls>){.download-button}
 
 ## Tercih Sebebi
 
