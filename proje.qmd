@@ -5,10 +5,9 @@ number-sections: true
 
 **Proje sayfamıza hoş geldiniz.**
 
-_Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin._
+*Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
 
 (Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)
-
 
 # Proje Genel Bakış ve Kapsamı
 
@@ -24,7 +23,7 @@ xxxxxx
 
 ## Veri Hakkında Genel Bilgiler
 
-xxxxxx
+\[İlgili veri seti için linke tıklayabilir ve indirebilirsiniz.\](<https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls>){.download-button}
 
 ## Tercih Sebebi
 
