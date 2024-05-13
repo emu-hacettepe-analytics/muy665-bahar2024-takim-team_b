@@ -127,7 +127,20 @@ ggplot(total_2009_2022, aes(x = Year, y = Number.of.vehicles.registered.to.traff
   labs(title = "Yıllara Göre Trafiğe Kayıtlı Araç Sayısı", x = "Yıl", y = "Araç Sayısı")
 
 ```
-
+Grafik 1 Yorumlama
+**2009-2022 Kazaların Yıllara Göre Değişimi:** 
+```{r}
+#| code-fold: true
+#| code-summary: "Kodu görüntüle"
+# Bar Plot - Kazaların Yıllara Göre Değişimi
+ggplot(total_2009_2022, aes(x = Year, y = Total.number.of.accidents)) +
+  geom_bar(stat = "identity", position = position_dodge(), width = 0.7, fill = "#4C055E") + 
+  scale_y_continuous(limits = c(9e+05, NA), oob = scales::oob_squish) + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) +
+  scale_x_continuous(breaks = seq(min(total_2009_2022$Year), max(total_2009_2022$Year), by = 1), labels = as.character(seq(min(total_2009_2022$Year), max(total_2009_2022$Year), by = 1))) +
+  labs(title = "Yıllara Göre Toplam Kaza Sayısı", 
+       x = "Yıl", y = "Sayı")
+```
 # Sonuçlar ve Ana Çıkarımlar
 
 xxxxxx

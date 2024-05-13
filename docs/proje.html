@@ -367,6 +367,23 @@ The following object is masked from 'package:dplyr':
 <p><img src="proje_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>Grafik 1 Yorumlama <strong>2009-2022 Kazaların Yıllara Göre Değişimi:</strong></p>
+<div class="cell">
+<details>
+<summary>Kodu görüntüle</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bar Plot - Kazaların Yıllara Göre Değişimi</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(total_2009_2022, <span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> Total.number.of.accidents)) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="fu">position_dodge</span>(), <span class="at">width =</span> <span class="fl">0.7</span>, <span class="at">fill =</span> <span class="st">"#4C055E"</span>) <span class="sc">+</span> </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="fl">9e+05</span>, <span class="cn">NA</span>), <span class="at">oob =</span> scales<span class="sc">::</span>oob_squish) <span class="sc">+</span> </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="fu">min</span>(total_2009_2022<span class="sc">$</span>Year), <span class="fu">max</span>(total_2009_2022<span class="sc">$</span>Year), <span class="at">by =</span> <span class="dv">1</span>), <span class="at">labels =</span> <span class="fu">as.character</span>(<span class="fu">seq</span>(<span class="fu">min</span>(total_2009_2022<span class="sc">$</span>Year), <span class="fu">max</span>(total_2009_2022<span class="sc">$</span>Year), <span class="at">by =</span> <span class="dv">1</span>))) <span class="sc">+</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Yıllara Göre Toplam Kaza Sayısı"</span>, </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Yıl"</span>, <span class="at">y =</span> <span class="st">"Sayı"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="proje_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
 </section>
 </section>
 <section id="sonuçlar-ve-ana-çıkarımlar" class="level1" data-number="4">
