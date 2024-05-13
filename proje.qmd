@@ -66,10 +66,10 @@ Trend analizi, zaman içindeki veri noktalarının gözlemlenen davranışların
 #| code-fold: true
 #| code-summary: "Kodu görüntüle"
 # Gerekli Kütüphaneler
-install.packages("tidyverse")  # Veri işleme ve görselleştirme
-install.packages("readxl")     # Excel dosyalarını okuma
-install.packages("ggplot2")    # Görselleştirme
-install.packages("gridExtra")    # Görselleştirme (subplot)
+#install.packages("tidyverse")  # Veri işleme ve görselleştirme
+#install.packages("readxl")     # Excel dosyalarını okuma
+#install.packages("ggplot2")    # Görselleştirme
+#install.packages("gridExtra")    # Görselleştirme (subplot)
 
 library(tidyverse)
 library(readxl)
