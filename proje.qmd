@@ -198,7 +198,7 @@ p2 <- ggplot(kusurlar_2022, aes(x = Total, y = Faults)) +
   labs(title = "2022 Yılı Kazalardaki Kusur Sayıları", 
        x = "Kaza Sayısı", y = "Kusur")
 
-grid.arrange(p1, p2, ncol = 2)
+grid.arrange(p1, p2, nrow=2,ncol = 1)
 
 
 ```
