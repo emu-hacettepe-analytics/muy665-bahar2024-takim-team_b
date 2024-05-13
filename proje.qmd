@@ -17,11 +17,13 @@ xxxxxx
 
 ## Veri Kaynağı
 
-Veriler Tüik resmi sitesinden alınmıştır.Verilere ulaşmak için linke tıklayabilirsiniz.
+Veriler Tüik resmi sitesinden alınmıştır. Verilere ulaşmak için [linke](https://data.tuik.gov.tr/Bulten/Index?p=Karayolu-Trafik-Kaza-Istatistikleri-2022-49513#:~:text=T%C3%9C%C4%B0K%20Kurumsal&text=%C3%9Clkemiz%20karayolu%20a%C4%9F%C4%B1nda%202022%20y%C4%B1l%C4%B1nda,ise%20%C3%B6l%C3%BCml%C3%BC%20yaralanmal%C4%B1%20trafik%20kazas%C4%B1d%C4%B1r) tıklayabilirsiniz.
 
 ## Veri Hakkında Genel Bilgiler
 
-\\\[İlgili veri seti için linke tıklayabilir ve indirebilirsiniz.\\\](<https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls>){.download-button}
+[\[2022 yılı için İlgili veri seti için linke tıklayabilir ve indirebilirsiniz.\]](https://github.com/emu-hacettepe-analytics/muy665-bahar2024-takim-team_b/blob/main/trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls)
+
+[\[2021 yılı için İlgili veri seti için linke tıklayabilir ve indirebilirsiniz.\]](https://data.tuik.gov.tr/Bulten/Index?p=Karayolu-Trafik-Kaza-Istatistikleri-2021-45658)
 
 ## Tercih Sebebi
 
