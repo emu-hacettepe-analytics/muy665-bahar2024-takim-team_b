@@ -141,6 +141,67 @@ ggplot(total_2009_2022, aes(x = Year, y = Total.number.of.accidents)) +
   labs(title = "Yıllara Göre Toplam Kaza Sayısı", 
        x = "Yıl", y = "Sayı")
 ```
-# Sonuçlar ve Ana Çıkarımlar
+Grafik2 Yorumlama
+```{r}
+#| code-fold: true
+#| code-summary: "Kodu görüntüle"
+# Yıllara göre illerdeki ölümlü ve/veya yaralanmalı kaza sayısı oranlarını listelere ekleme
+iller_2022 <- iller_2022 %>%
+  mutate(Ratio = Number.of.accidents.involving.death.or.injury / Total.number.of.accidents)
+iller_2021 <- iller_2021 %>%
+  mutate(Ratio = Number.of.accidents.involving.death.or.injury / Total.number.of.accidents)
 
+
+# Veri setlerine 'yıl' etiketi ekleme
+iller_2021$Year <- '2021'
+iller_2022$Year <- '2022'
+
+# Veri setlerini birleştirme (boxplot çizimi için)
+combined_data <- rbind(iller_2021, iller_2022)
+
+combined_data <- combined_data %>%
+  group_by(Region) %>%
+  mutate(median_Ratio = median(Ratio)) %>%
+  ungroup() %>%
+  arrange(median_Ratio)  # Medyan değere göre artan sıralama
+
+# Şehirleri medyan değerlerine göre sıralama
+combined_data$Region <- factor(combined_data$Region, levels = unique(combined_data$Region))
+
+# Box Plot - 2021-2022 Yıllarına Göre Ölümlü veya Yaralanma Kazaların Sayısının Değişimi
+ggplot(combined_data, aes(x = Region, y = Ratio, fill = Year)) +
+  geom_boxplot(position = position_dodge(0.75)) +
+  labs(title = "Bölgelere Göre Ölümlü veya Yaralanmalı Kaza Oranları", x = "Bölge", y = "Ölümlü veya Yaralanmalı Kaza Sayısı/Toplam Kaza Sayısı") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) # X eksenindeki etiketleri düzenle
+
+```
+Grafik3 Yorumlama
+
+```{r}
+#| code-fold: true
+#| code-summary: "Kodu görüntüle"
+# Kusurları azalan sırlama ile hizalama
+kusurlar_2021$Faults <- factor(kusurlar_2021$Faults, levels = kusurlar_2021$Faults[order(kusurlar_2021$Total)])
+kusurlar_2022$Faults <- factor(kusurlar_2022$Faults, levels = kusurlar_2022$Faults[order(kusurlar_2022$Total)])
+
+
+# Bar Plot - 2021-2022 Yıllarına Göre Kusurların Değişimi
+p1 <- ggplot(kusurlar_2021, aes(x = Total, y = Faults)) +
+  geom_bar(stat = "identity", position = position_dodge(), width = 0.7, fill = "#09801E") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) + scale_x_log10() + 
+  labs(title = "2021 Yılı Kazalardaki Kusur Sayıları", 
+        x = "Kaza Sayısı", y = "Kusur")
+
+p2 <- ggplot(kusurlar_2022, aes(x = Total, y = Faults)) +
+  geom_bar(stat = "identity", position = position_dodge(), width = 0.7, fill = "#09801E") + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) + scale_x_log10() + 
+  labs(title = "2022 Yılı Kazalardaki Kusur Sayıları", 
+       x = "Kaza Sayısı", y = "Kusur")
+
+grid.arrange(p1, p2, ncol = 2)
+
+
+```
+Grafik 4 Yorumlama
+# Sonuçlar ve Ana Çıkarımlar
 xxxxxx
