@@ -3,6 +3,8 @@ title: "Takım: Team B"
 sidebar: false 
 ---
 
+![](images/DALL·E 2024-05-14 11.48.52 - A sleek and professional GitHub profile cover for a student using R programming. The design should include elements specific to R programming such as .webp)
+
 MUY665-İş Analitiği dersi takım sayfamıza hoş geldiniz.
 
 Bu analitik çalışmalarımızı paylaşıyoruz.
@@ -27,14 +29,32 @@ Lütfen faaliyetlerimizi görmek için bizi takipte kalın.
 
 ## Proje Adı
 
-MUY665-İş Analitiği iyileştirme çalışmaları (örnek)
+# **Türkiye’de Kaza Trendleri: Bölgesel Analiz ve 2021-2022 Kaza Kusur Raporu Analizi**
 
 ## Proje Konusu
 
-Örnek: Bu projede MUY665-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için ........ yöntemleri kullanarak, ....... çalışmaları yaptık Sonuç olarak, MUY665-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik.
+Araştırma, Türkiye'nin çeşitli bölgelerindeki kaza oranları ve bu oranların yıllık değişimlerini inceleyerek, bölgesel trafik güvenliği sorunlarına çözümler sunmayı hedeflemektedir. Türkiye İstatistik Kurumu'nun sağladığı verilerle desteklenerek, trafik kazalarının sıklığını, sebeplerini ve kazalara müdahalede bulunabilecek stratejik yöntemleri detaylı bir şekilde analiz etmeyi amaçlamaktadır.
 
 ## Veri Seti Hakkında Özet Bilgi
 
+Türkiye İstatistik Kurumu (TÜİK) Veri Tabanı üzerinden elde edilen Türkiye’deki kaza verileri;
+
+· İllere Göre Trafik Kaza Ölü ve Yaralı Sayısı 2021
+
+· İllere Göre Trafik Kaza Ölü ve Yaralı Sayısı 2022
+
+· Ölümlü ve Yaralanmalı Kazaya Neden Olan Kusurlar 2021
+
+· Ölümlü ve Yaralanmalı Kazaya Neden Olan Kusurlar 2022
+
+· Trafikte Kayıtlı Araç Kaza Ölü ve Yaralı Sayısı 2009-2022
+
 ## Sonuçlar
 
-Burada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır.
+Bu araştırma, Türkiye'nin farklı bölgelerindeki kaza oranlarını ve bu oranlardaki yıllık değişimleri inceleyerek bölgesel trafik güvenliği sorunlarına ışık tutmayı hedeflemiştir. Türkiye İstatistik Kurumu (TÜİK) veri tabanından sağlanan bilgilerin analizi, ülke genelindeki trafik kazalarının derinlemesine anlaşılmasını ve etkili çözümler üretilmesini sağlamıştır.
+
+Elde edilen sonuçlar, Türkiye'deki trafik güvenliği politikalarının geliştirilmesi ve trafik kazalarının azaltılması için önemli bir bilgi kaynağı oluşturmaktadır. Bölgesel kaza verilerinin incelenmesi, farklı bölgelerdeki trafik güvenliği sorunlarının belirlenmesine ve buna yönelik stratejilerin geliştirilmesine yardımcı olmaktadır.
+
+Araştırma, Türkiye'nin çeşitli bölgelerindeki kaza oranlarının yanı sıra kaza kusurlarını da detaylı bir şekilde ele almıştır. Bu kusurların belirlenmesi, trafik güvenliğini artırmak için alınacak önlemlerin belirlenmesinde önemli bir adımdır. Örneğin, sürücü hızının yol, hava ve trafik koşullarına uyumlu hale getirilmesi veya dönüş kurallarına uyulması gibi kusurların belirlenmesi, trafik kazalarının azaltılması için etkili stratejilerin oluşturulmasına yardımcı olabilir.
+
+Araştırmanın sonuçları, trafik güvenliği alanında faaliyet gösteren kurumlar, yerel yönetimler, sivil toplum kuruluşları ve diğer ilgili paydaşlar için önemli bir rehber niteliği taşımaktadır. Bu bulguların dikkate alınması ve uygulanması, Türkiye'deki trafik kazalarının azaltılması ve trafik güvenliğinin artırılması konusunda önemli bir adım olacaktır.
