@@ -64,7 +64,7 @@ Trend analizi, zaman içindeki veri noktalarının gözlemlenen davranışların
 
 ## Analiz Sonuçları
 
-**2009-2022 Yıllarına Ait Trafiğe Kayıtlı Toplam Araç:**
+**Grafik 1: 2009-2022 Yıllarına Ait Trafiğe Kayıtlı Toplam Araç Sayısı**
 
 ```{r, message=FALSE}
 #| code-fold: true
@@ -136,8 +136,6 @@ ggplot(total_2009_2022, aes(x = Year, y = Number.of.vehicles.registered.to.traff
 
 ```
 
-**2009-2022 Yıllarında Trafiğe Kayıtlı Araç Sayısı:**
-
 Türkiyenin hızlı nüfus artışı ve kentsel bölgelerdeki büyüme, daha fazla bireyin özel araçlara ihtiyaç duymasına yol açmıştır. Artık kentsel alanlarda yaşayan insanlar, işe ulaşım, alışveriş ve diğer günlük ihtiyaçlar için kişisel taşıtlarını tercih etmektedir.
 
 Türkiye ekonomisinin büyümesindeki artış hane hallklarının gelirlerinde de artışa neden olmuştur, bu da fazla kişinin araç satın almasına olanak sağlamıştır.
@@ -147,6 +145,8 @@ Türkiye'deki karayolu altyapısının gelişimi, özellikle otoyollar ve köpr�
 Bazı bölgelerde toplu taşıma sistemlerinin yetersiz kalması veya erişilebilir olmaması, insanları kendi araçlarını almaya yönlendirmiştir. Toplu taşıma seçeneklerinin sınırlı olduğu şehir ve kasabalarda, bireyler günlük ulaşım ihtiyaçlarını karşılamak için özel araçlara daha fazla bağımlı hale gelmişlerdir.
 
 Bankalar ve finans kuruluşları tarafından sunulan uygun kredi imkanları ve araç finansman seçenekleri, daha fazla insanın araba sahibi olmasını kolaylaştırmıştır. Özellikle düşük faiz oranları, araç alımlarını daha erişilebilir hale getirmiştir.
+
+**Grafik 2: Kazaların 2009-2022 Yıllarına Göre Değişimi**
 
 ```{r}
 #| code-fold: true
@@ -161,13 +161,13 @@ ggplot(total_2009_2022, aes(x = Year, y = Total.number.of.accidents)) +
        x = "Yıl", y = "Sayı")
 ```
 
-**Kazaların 2009-2022 Yıllarına Göre Değişimi:**
-
 Grafiğe bakıldığında, 2020 yılında toplam kaza sayısında belirgin bir düşüş görülmektedir. Bu düşüşün başlıca sebepleri  arasında COVİD-19 pandemisi bulunmaktadır.2020 yılı, dünya genelinde COVID-19 pandemisinin etkili olduğu bir yıl olmuştur. Türkiye dahil birçok ülkede karantina tedbirleri, sokağa çıkma yasakları ve sosyal mesafe kuralları uygulanmıştır. Bu durum, insanların evden çıkmalarını ve dolayısıyla trafikteki araç sayısını önemli ölçüde azaltmıştır. Azalan trafik, doğal olarak kaza sayılarında da bir düşüşe yol açmıştır.
 
 Bir diğer sebep ise seyahat kısıtlamalarıdır. Pandemi nedeniyle uygulanan seyahat kısıtlamaları ve turizmdeki düşüş, özellikle turistik bölgelerde ve şehirlerarası yollarda trafik yoğunluğunun azalmasına neden olmuştur. Bu da kaza oranlarını düşüren bir diğer faktör olarak görülebilir.
 
 Pandemi sırasında birçok işyeri uzaktan çalışmaya geçiş yapmıştır. Aynı şekilde, eğitim kurumları da uzaktan eğitime yönelik adımlar atmıştır. Bu değişiklikler, işe veya okula gidip gelmek için yapılan günlük seyahatleri azaltmış, bu da yollardaki araç sayısının ve potansiyel kaza sayısının azalmasına katkıda bulunmuştur.
+
+**Grafik 3: Bölgesel Kazaların 2021-2022 Yıllarına Göre Değişimi**
 
 ```{r}
 #| code-fold: true
@@ -203,8 +203,6 @@ ggplot(combined_data, aes(x = Region, y = Ratio, fill = Year)) +
 
 ```
 
-**Bölgesel Kazaların 2021-2022 Yıllarına Göre Değişimi:**
-
 Grafikte, Türkiye'nin çeşitli bölgelerinde 2021 ve 2022 yıllarına ait kaza oranlarının karşılaştırması görülmektedir.
 
 Bazı bölgelerde, özellikle büyük şehirlerde veya turistik bölgelerde trafik yoğunluğunun mevsimsel veya ekonomik etkenlere bağlı olarak değişmesi kaza oranları üzerinde etkili olabilir. Örneğin, turizm sezonunda Ege veya Akdeniz bölgelerindeki trafik artışı kaza oranlarını yükseltebilir.
@@ -214,6 +212,8 @@ Bazı bölgelerde, özellikle büyük şehirlerde veya turistik bölgelerde traf
 Trafikle ilgili yasaların veya yönetmeliklerin güncellenmesi, sürücülerin davranışlarını etkileyerek kaza oranları üzerinde değişikliklere neden olabilir. Hız limitlerinin değiştirilmesi, alkol veya uyuşturucu testlerinin sıklaştırılması gibi faktörler kaza oranlarını etkileyebilir.
 
 Ekonomik durumun kötüleşmesi veya iyileşmesi, araç kullanım sıklığını ve dolayısıyla kaza oranlarını etkileyebilir. Ekonomik durgunluk dönemlerinde insanlar daha az seyahat edebilir veya eski, daha az güvenli araçları kullanmaya devam edebilir.
+
+**Grafik 4: Trafik Kazalarına Sebep Olan Kusurların 2021-2022 Yıllarına Göre Değişimi**
 
 ```{r}
 #| code-fold: true
@@ -226,26 +226,24 @@ kusurlar_2022$Fault.Number <- factor(kusurlar_2022$Fault.Number, levels = kusurl
 # Bar Plot - 2021-2022 Yıllarına Göre Kusurların Değişimi
 p1 <- ggplot(kusurlar_2021, aes(x = Total, y = Fault.Number)) +
   geom_bar(stat = "identity", position = position_dodge(), width = 0.7, fill = "#09801E") + 
-  theme(plot.title = element_text(size=8), axis.text.x = element_text(angle = 90, hjust = 0.5)) + scale_x_log10() + 
+  theme(plot.title = element_text(size=10), axis.text.x = element_text(angle = 90, hjust = 0.5)) + scale_x_log10() + 
   labs(title = "2021 Yılı Kazalardaki Kusur Sayıları", 
         x = "Kaza Sayısı", y = "Kusur")
 
 p2 <- ggplot(kusurlar_2022, aes(x = Total, y = Fault.Number)) +
   geom_bar(stat = "identity", position = position_dodge(), width = 0.7, fill = "#09801E") + 
-  theme(plot.title = element_text(size=8), axis.text.x = element_text(angle = 90, hjust = 0.5)) + scale_x_log10() + 
+  theme(plot.title = element_text(size=10), axis.text.x = element_text(angle = 90, hjust = 0.5)) + scale_x_log10() + 
   labs(title = "2022 Yılı Kazalardaki Kusur Sayıları", 
        x = "Kaza Sayısı", y = "Kusur")
 
 grid.arrange(p1,p2,ncol=2)
 ```
 
-**Trafik Kazalarına Sebep Olan Kusurların 2021-2022 Yıllarına Göre Değişimi:**
-
 Bu grafiklerde 2021 ve 2022 yıllarında Türkiye'deki trafik kazalarına sebep olan kusurların sayıları karşılaştırılmaktadır.
 
 Araç hızını yol, hava ve trafik koşullarına uygun ayarlamama kusuru her iki yıl içiçnde en sık rastlanan kusur olmuştur. Bu durum, sürücülerin hız limitlerine uymamasının yanı sıra, hava koşulları ve yol durumunu dikkate almadan sürüş yapmalarından kaynaklanabilir. Bu kusur, trafik kazalarının önemli bir kısmını oluşturur çünkü uygun olmayan hızlar, reaksiyon süresini azaltır ve kazaların daha şiddetli olmasına neden olur.
 
-Dönüş kuralllarına uymamma ve yol verme hataları gibi kusurlar genellikle kavşaklarda ve dönüş yapılırken görülür. . Sürücülerin dönüş kurallarına uymaması veya gerektiğinde yol vermemesi, özellikle yoğun trafikte çarpışmalara yol açar.
+Dönüş kuralllarına uymama ve yol verme hataları gibi kusurlar genellikle kavşaklarda ve dönüş yapılırken görülür. Sürücülerin dönüş kurallarına uymaması veya gerektiğinde yol vermemesi, özellikle yoğun trafikte çarpışmalara yol açar.
 
 Trafik ışıklarına ve dur işaretlerine uyulmaması, hem 2021 hem de 2022 yıllarında yaygın görülen bir kusur olmuş. Bu tür ihlaller, özellikle kavşaklarda ciddi kazalara neden olur.
 
