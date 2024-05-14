@@ -224,20 +224,19 @@ kusurlar_2022$Faults <- factor(kusurlar_2022$Faults, levels = kusurlar_2022$Faul
 
 
 # Bar Plot - 2021-2022 Yıllarına Göre Kusurların Değişimi
-p1 <- ggplot(kusurlar_2021, aes(x = Total, y = Faults)) +
+p1 <- ggplot(kusurlar_2021, aes(x = Total, y = Fault.Number)) +
   geom_bar(stat = "identity", position = position_dodge(), width = 0.7, fill = "#09801E") + 
   theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) + scale_x_log10() + 
   labs(title = "2021 Yılı Kazalardaki Kusur Sayıları", 
         x = "Kaza Sayısı", y = "Kusur")
 
-p2 <- ggplot(kusurlar_2022, aes(x = Total, y = Faults)) +
+p2 <- ggplot(kusurlar_2022, aes(x = Total, y = Fault.Number)) +
   geom_bar(stat = "identity", position = position_dodge(), width = 0.7, fill = "#09801E") + 
   theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) + scale_x_log10() + 
   labs(title = "2022 Yılı Kazalardaki Kusur Sayıları", 
        x = "Kaza Sayısı", y = "Kusur")
 
-grid.arrange(p1, p2, nrow=2,ncol = 1)
-
+grid.arrange(p1,p2,ncol=2)
 
 ```
 
