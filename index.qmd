@@ -3,11 +3,11 @@ title: "Takım: Team B"
 sidebar: false 
 ---
 
-![](images/DALL·E 2024-05-14 11.48.52 - A sleek and professional GitHub profile cover for a student using R programming. The design should include elements specific to R programming such as .webp)
+![](images/DALL·E%202024-05-14%2011.48.52%20-%20A%20sleek%20and%20professional%20GitHub%20profile%20cover%20for%20a%20student%20using%20R%20programming.%20The%20design%20should%20include%20elements%20specific%20to%20R%20programming%20such%20as%20.webp)
 
-MUY665-İş Analitiği dersi takım sayfamıza hoş geldiniz.
+MUY665-İş Analitiği dersi takım sayfamıza hoş geldiniz!
 
-Bu analitik çalışmalarımızı paylaşıyoruz.
+Bu sayfada analitik çalışmalarımızı yorumlarımızla birlikte paylaşıyoruz.
 
 Lütfen faaliyetlerimizi görmek için bizi takipte kalın.
 
