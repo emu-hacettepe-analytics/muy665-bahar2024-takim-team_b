@@ -130,7 +130,7 @@ head(total_2009_2022, 14)  # İlk birkaç satırı inceleme
 
 # Line Plot - Araç Sayılarının Yıllara Göre Değişimi
 ggplot(total_2009_2022, aes(x = Year, y = Number.of.vehicles.registered.to.traffic, group = 1)) +
-  geom_line(color = "blue", size = 1) +
+  geom_line(color = "blue", linewidth = 1) +
   geom_point(size = 2) +
   labs(title = "Yıllara Göre Trafiğe Kayıtlı Araç Sayısı", x = "Yıl", y = "Araç Sayısı")
 
@@ -219,8 +219,8 @@ Ekonomik durumun kötüleşmesi veya iyileşmesi, araç kullanım sıklığını
 #| code-fold: true
 #| code-summary: "Kodu görüntüle"
 # Kusurları azalan sırlama ile hizalama
-kusurlar_2021$Faults <- factor(kusurlar_2021$Faults, levels = kusurlar_2021$Faults[order(kusurlar_2021$Total)])
-kusurlar_2022$Faults <- factor(kusurlar_2022$Faults, levels = kusurlar_2022$Faults[order(kusurlar_2022$Total)])
+kusurlar_2021$Faults <- factor(kusurlar_2021$Fault.Number, levels = kusurlar_2021$Faults[order(kusurlar_2021$Total)])
+kusurlar_2022$Faults <- factor(kusurlar_2022$Fault.Number, levels = kusurlar_2022$Faults[order(kusurlar_2022$Total)])
 
 
 # Bar Plot - 2021-2022 Yıllarına Göre Kusurların Değişimi
