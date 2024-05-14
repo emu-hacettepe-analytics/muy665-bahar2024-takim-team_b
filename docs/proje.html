@@ -163,6 +163,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">3.1</span> Keşifsel Veri Analizi</a></li>
   <li><a href="#trend-analizi" id="toc-trend-analizi" class="nav-link" data-scroll-target="#trend-analizi"><span class="header-section-number">3.2</span> Trend Analizi</a></li>
   <li><a href="#analiz-sonuçları" id="toc-analiz-sonuçları" class="nav-link" data-scroll-target="#analiz-sonuçları"><span class="header-section-number">3.3</span> Analiz Sonuçları</a></li>
+  <li><a href="#sonuçlar-ve-ana-çıkarımlar" id="toc-sonuçlar-ve-ana-çıkarımlar" class="nav-link" data-scroll-target="#sonuçlar-ve-ana-çıkarımlar"><span class="header-section-number">3.4</span> Sonuçlar ve Ana Çıkarımlar</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -199,6 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Proje, Türkiye İstatistik Kurumu (TÜİK) verileri kullanarak, belirli kaza türlerini ve bunların yıllık dağılımını analiz eder. En yaygın kaza kusurlarını belirlemek, hangi faktörlerin daha baskın olduğunu anlamak ve bunların kazalara etkisini değerlendirmekte kullanılması hedeflenir. Bu analiz, sürücü davranışları, yol koşulları, trafik işaretlerinin yeterliliği ve araçların teknik durumları gibi çeşitli faktörleri içerir.</p>
 <p>Aynı zamanda rapor kapsamında Türkiye’nin farklı bölgelerindeki kaza oranları ve sebepleri karşılaştırmalı olarak incelenerek belirli bölgelerdeki özgül risk faktörlerini ve kaza yoğunluğunu anlaşılmaktadır. Rapor kapsamında elde edilen bilgilere göre kazaları azaltmak için önleme stratejileri geliştirilebilir. Bu önlemler, eğitim programları, yasal düzenlemeler, altyapı iyileştirmeleri ve kamusal farkındalık kampanyalarını içerebilir.</p>
 <p>Bu proje kapsamında yapılan değerlendirmeler kazaların daha iyi anlaşılması, etkili önlemlerin alınmasını ve trafik güvenliği politikalarının daha bilinçli şekilde şekillendirilmesini sağlayacaktır.</p>
+<p><img src="images/trafik kazaları.webp" class="img-fluid"></p>
 </section>
 <section id="veri" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Veri</h1>
@@ -250,8 +252,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("readxl")     # Excel dosyalarını okuma</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("ggplot2")    # Görselleştirme</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("gridExtra")    # Görselleştirme (subplot)</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("dplyr") # Data manipülasyon genel paket (gridextra paketi için)</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse);</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
@@ -267,9 +270,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <details>
 <summary>Kodu görüntüle</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gridExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl);</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2);</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gridExtra);</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stderr">
 <pre><code>
@@ -281,48 +284,50 @@ The following object is masked from 'package:dplyr':
 </div>
 <details>
 <summary>Kodu görüntüle</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Veriyi okuma</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>total_2009_2022 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls"</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>iller_2022 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"illere_gore_trafik_kaza_olu_ve_yarali_sayisi_2022.xls"</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>iller_2021 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"illere_gore_trafik_kaza_olu_ve_yarali_sayisi_2021.xls"</span>)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>kusurlar_2022 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"olumlu_yaralanmali_kazaya_neden_olan_kusurlar_2022.xls"</span>)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>kusurlar_2021 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"olumlu_yaralanmali_kazaya_neden_olan_kusurlar_2021.xls"</span>)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Veri (sütun) isimlerini R tarafından okunabilir şekilde düzünleme</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(total_2009_2022) <span class="ot">&lt;-</span> <span class="fu">make.names</span>(<span class="fu">names</span>(total_2009_2022), <span class="at">unique =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(iller_2022) <span class="ot">&lt;-</span> <span class="fu">make.names</span>(<span class="fu">names</span>(iller_2022), <span class="at">unique =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(iller_2021) <span class="ot">&lt;-</span> <span class="fu">make.names</span>(<span class="fu">names</span>(iller_2021), <span class="at">unique =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(kusurlar_2022) <span class="ot">&lt;-</span> <span class="fu">make.names</span>(<span class="fu">names</span>(kusurlar_2022), <span class="at">unique =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(kusurlar_2021) <span class="ot">&lt;-</span> <span class="fu">make.names</span>(<span class="fu">names</span>(kusurlar_2021), <span class="at">unique =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Türkiye'nin coğrafi bölgelerine göre şehirlerin listesini oluşturma</span></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>turkiye_bolgeler <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Marmara"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"İstanbul"</span>, <span class="st">"Kocaeli"</span>, <span class="st">"Bursa"</span>, <span class="st">"Balıkesir"</span>, <span class="st">"Çanakkale"</span>, <span class="st">"Yalova"</span>, <span class="st">"Bilecik"</span>, <span class="st">"Edirne"</span>, <span class="st">"Kırklareli"</span>, <span class="st">"Tekirdağ"</span>, <span class="st">"Sakarya"</span>),</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Ege"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"İzmir"</span>, <span class="st">"Aydın"</span>, <span class="st">"Muğla"</span>, <span class="st">"Manisa"</span>, <span class="st">"Denizli"</span>, <span class="st">"Uşak"</span>, <span class="st">"Afyonkarahisar"</span>, <span class="st">"Kütahya"</span>),</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Akdeniz"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Antalya"</span>, <span class="st">"Mersin"</span>, <span class="st">"Adana"</span>, <span class="st">"Hatay"</span>, <span class="st">"Isparta"</span>, <span class="st">"Burdur"</span>, <span class="st">"Osmaniye"</span>, <span class="st">"Kahramanmaraş"</span>),</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">"İç Anadolu"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Ankara"</span>, <span class="st">"Konya"</span>, <span class="st">"Eskişehir"</span>, <span class="st">"Kayseri"</span>, <span class="st">"Nevşehir"</span>, <span class="st">"Kırşehir"</span>, <span class="st">"Aksaray"</span>, <span class="st">"Kırıkkale"</span>, <span class="st">"Yozgat"</span>, <span class="st">"Niğde"</span>, <span class="st">"Karaman"</span>, <span class="st">"Sivas"</span>, <span class="st">"Çankırı"</span>),</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Doğu Anadolu"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Van"</span>, <span class="st">"Erzurum"</span>, <span class="st">"Ağrı"</span>, <span class="st">"Malatya"</span>, <span class="st">"Bingöl"</span>, <span class="st">"Elazığ"</span>, <span class="st">"Tunceli"</span>, <span class="st">"Erzincan"</span>, <span class="st">"Muş"</span>, <span class="st">"Hakkari"</span>, <span class="st">"Iğdır"</span>, <span class="st">"Ardahan"</span>, <span class="st">"Bitlis"</span>, <span class="st">"Şırnak"</span>, <span class="st">"Kars"</span>),</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Güneydoğu Anadolu"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Diyarbakır"</span>, <span class="st">"Şanlıurfa"</span>, <span class="st">"Gaziantep"</span>, <span class="st">"Mardin"</span>, <span class="st">"Adıyaman"</span>, <span class="st">"Kilis"</span>, <span class="st">"Batman"</span>, <span class="st">"Siirt"</span>),</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Karadeniz"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Zonguldak"</span>, <span class="st">"Bartın"</span>, <span class="st">"Karabük"</span>, <span class="st">"Kastamonu"</span>, <span class="st">"Sinop"</span>,<span class="st">"Samsun"</span>, <span class="st">"Ordu"</span>, <span class="st">"Giresun"</span>, <span class="st">"Trabzon"</span>, <span class="st">"Rize"</span>, <span class="st">"Artvin"</span>, <span class="st">"Bolu"</span>, <span class="st">"Çorum"</span>, <span class="st">"Tokat"</span>, <span class="st">"Amasya"</span>, <span class="st">"Bayburt"</span>, <span class="st">"Gümüşhane"</span>, <span class="st">"Düzce"</span>)</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Şehirleri bölgelere göre ayırma (fonksiyon)</span></span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>bolge_bolme <span class="ot">&lt;-</span> <span class="cf">function</span>(province) {</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>  bolge <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (bolge_adi <span class="cf">in</span> <span class="fu">names</span>(turkiye_bolgeler)) {</span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (province <span class="sc">%in%</span> turkiye_bolgeler[[bolge_adi]]) {</span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>      bolge <span class="ot">&lt;-</span> bolge_adi</span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>      <span class="cf">break</span></span>
-<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(bolge)</span>
-<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Fonksiyonu listelere uygulama</span></span>
-<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>iller_2021<span class="sc">$</span>Region <span class="ot">&lt;-</span> <span class="fu">sapply</span>(iller_2021<span class="sc">$</span>X.Province, bolge_bolme)</span>
-<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>iller_2022<span class="sc">$</span>Region <span class="ot">&lt;-</span> <span class="fu">sapply</span>(iller_2022<span class="sc">$</span>X.Province, bolge_bolme)</span>
-<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a><span class="co"># Verinin kısa özeti</span></span>
-<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(total_2009_2022, <span class="dv">14</span>)  <span class="co"># İlk birkaç satırı inceleme</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr);</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Veriyi okuma</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>total_2009_2022 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>iller_2022 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"illere_gore_trafik_kaza_olu_ve_yarali_sayisi_2022.xls"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>iller_2021 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"illere_gore_trafik_kaza_olu_ve_yarali_sayisi_2021.xls"</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>kusurlar_2022 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"olumlu_yaralanmali_kazaya_neden_olan_kusurlar_2022.xls"</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>kusurlar_2021 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"olumlu_yaralanmali_kazaya_neden_olan_kusurlar_2021.xls"</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Veri (sütun) isimlerini R tarafından okunabilir şekilde düzünleme</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(total_2009_2022) <span class="ot">&lt;-</span> <span class="fu">make.names</span>(<span class="fu">names</span>(total_2009_2022), <span class="at">unique =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(iller_2022) <span class="ot">&lt;-</span> <span class="fu">make.names</span>(<span class="fu">names</span>(iller_2022), <span class="at">unique =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(iller_2021) <span class="ot">&lt;-</span> <span class="fu">make.names</span>(<span class="fu">names</span>(iller_2021), <span class="at">unique =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(kusurlar_2022) <span class="ot">&lt;-</span> <span class="fu">make.names</span>(<span class="fu">names</span>(kusurlar_2022), <span class="at">unique =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(kusurlar_2021) <span class="ot">&lt;-</span> <span class="fu">make.names</span>(<span class="fu">names</span>(kusurlar_2021), <span class="at">unique =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Türkiye'nin coğrafi bölgelerine göre şehirlerin listesini oluşturma</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>turkiye_bolgeler <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Marmara"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"İstanbul"</span>, <span class="st">"Kocaeli"</span>, <span class="st">"Bursa"</span>, <span class="st">"Balıkesir"</span>, <span class="st">"Çanakkale"</span>, <span class="st">"Yalova"</span>, <span class="st">"Bilecik"</span>, <span class="st">"Edirne"</span>, <span class="st">"Kırklareli"</span>, <span class="st">"Tekirdağ"</span>, <span class="st">"Sakarya"</span>),</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Ege"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"İzmir"</span>, <span class="st">"Aydın"</span>, <span class="st">"Muğla"</span>, <span class="st">"Manisa"</span>, <span class="st">"Denizli"</span>, <span class="st">"Uşak"</span>, <span class="st">"Afyonkarahisar"</span>, <span class="st">"Kütahya"</span>),</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Akdeniz"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Antalya"</span>, <span class="st">"Mersin"</span>, <span class="st">"Adana"</span>, <span class="st">"Hatay"</span>, <span class="st">"Isparta"</span>, <span class="st">"Burdur"</span>, <span class="st">"Osmaniye"</span>, <span class="st">"Kahramanmaraş"</span>),</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="st">"İç Anadolu"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Ankara"</span>, <span class="st">"Konya"</span>, <span class="st">"Eskişehir"</span>, <span class="st">"Kayseri"</span>, <span class="st">"Nevşehir"</span>, <span class="st">"Kırşehir"</span>, <span class="st">"Aksaray"</span>, <span class="st">"Kırıkkale"</span>, <span class="st">"Yozgat"</span>, <span class="st">"Niğde"</span>, <span class="st">"Karaman"</span>, <span class="st">"Sivas"</span>, <span class="st">"Çankırı"</span>),</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Doğu Anadolu"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Van"</span>, <span class="st">"Erzurum"</span>, <span class="st">"Ağrı"</span>, <span class="st">"Malatya"</span>, <span class="st">"Bingöl"</span>, <span class="st">"Elazığ"</span>, <span class="st">"Tunceli"</span>, <span class="st">"Erzincan"</span>, <span class="st">"Muş"</span>, <span class="st">"Hakkari"</span>, <span class="st">"Iğdır"</span>, <span class="st">"Ardahan"</span>, <span class="st">"Bitlis"</span>, <span class="st">"Şırnak"</span>, <span class="st">"Kars"</span>),</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Güneydoğu Anadolu"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Diyarbakır"</span>, <span class="st">"Şanlıurfa"</span>, <span class="st">"Gaziantep"</span>, <span class="st">"Mardin"</span>, <span class="st">"Adıyaman"</span>, <span class="st">"Kilis"</span>, <span class="st">"Batman"</span>, <span class="st">"Siirt"</span>),</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Karadeniz"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Zonguldak"</span>, <span class="st">"Bartın"</span>, <span class="st">"Karabük"</span>, <span class="st">"Kastamonu"</span>, <span class="st">"Sinop"</span>,<span class="st">"Samsun"</span>, <span class="st">"Ordu"</span>, <span class="st">"Giresun"</span>, <span class="st">"Trabzon"</span>, <span class="st">"Rize"</span>, <span class="st">"Artvin"</span>, <span class="st">"Bolu"</span>, <span class="st">"Çorum"</span>, <span class="st">"Tokat"</span>, <span class="st">"Amasya"</span>, <span class="st">"Bayburt"</span>, <span class="st">"Gümüşhane"</span>, <span class="st">"Düzce"</span>)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Şehirleri bölgelere göre ayırma (fonksiyon)</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>bolge_bolme <span class="ot">&lt;-</span> <span class="cf">function</span>(province) {</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  bolge <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (bolge_adi <span class="cf">in</span> <span class="fu">names</span>(turkiye_bolgeler)) {</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (province <span class="sc">%in%</span> turkiye_bolgeler[[bolge_adi]]) {</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>      bolge <span class="ot">&lt;-</span> bolge_adi</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>      <span class="cf">break</span></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(bolge)</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Fonksiyonu listelere uygulama</span></span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>iller_2021<span class="sc">$</span>Region <span class="ot">&lt;-</span> <span class="fu">sapply</span>(iller_2021<span class="sc">$</span>X.Province, bolge_bolme)</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>iller_2022<span class="sc">$</span>Region <span class="ot">&lt;-</span> <span class="fu">sapply</span>(iller_2022<span class="sc">$</span>X.Province, bolge_bolme)</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Verinin kısa özeti</span></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(total_2009_2022, <span class="dv">14</span>)  <span class="co"># İlk birkaç satırı inceleme</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 14 × 9
@@ -366,7 +371,12 @@ The following object is masked from 'package:dplyr':
 <p><img src="proje_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Grafik 1 Yorumlama <strong>2009-2022 Kazaların Yıllara Göre Değişimi:</strong></p>
+<p><strong>2009-2022 Yıllarında Trafiğe Kayıtlı Araç Sayısı:</strong></p>
+<p>Türkiyenin hızlı nüfus artışı ve kentsel bölgelerdeki büyüme, daha fazla bireyin özel araçlara ihtiyaç duymasına yol açmıştır. Artık kentsel alanlarda yaşayan insanlar, işe ulaşım, alışveriş ve diğer günlük ihtiyaçlar için kişisel taşıtlarını tercih etmektedir.</p>
+<p>Türkiye ekonomisinin büyümesindeki artış hane hallklarının gelirlerinde de artışa neden olmuştur, bu da fazla kişinin araç satın almasına olanak sağlamıştır.</p>
+<p>Türkiye’deki karayolu altyapısının gelişimi, özellikle otoyollar ve köprüler, özel araç kullanımını daha cazip hale getirmiştir. İyi altyapı, araç kullanımını daha verimli ve konforlu hale getirerek, araç sahipliğini teşvik etmiştir.</p>
+<p>Bazı bölgelerde toplu taşıma sistemlerinin yetersiz kalması veya erişilebilir olmaması, insanları kendi araçlarını almaya yönlendirmiştir. Toplu taşıma seçeneklerinin sınırlı olduğu şehir ve kasabalarda, bireyler günlük ulaşım ihtiyaçlarını karşılamak için özel araçlara daha fazla bağımlı hale gelmişlerdir.</p>
+<p>Bankalar ve finans kuruluşları tarafından sunulan uygun kredi imkanları ve araç finansman seçenekleri, daha fazla insanın araba sahibi olmasını kolaylaştırmıştır. Özellikle düşük faiz oranları, araç alımlarını daha erişilebilir hale getirmiştir.</p>
 <div class="cell">
 <details>
 <summary>Kodu görüntüle</summary>
@@ -383,7 +393,10 @@ The following object is masked from 'package:dplyr':
 <p><img src="proje_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Grafik2 Yorumlama</p>
+<p><strong>Kazaların 2009-2022 Yıllarına Göre Değişimi:</strong></p>
+<p>Grafiğe bakıldığında, 2020 yılında toplam kaza sayısında belirgin bir düşüş görülmektedir. Bu düşüşün başlıca sebepleri&nbsp; arasında COVİD-19 pandemisi bulunmaktadır.2020 yılı, dünya genelinde COVID-19 pandemisinin etkili olduğu bir yıl olmuştur. Türkiye dahil birçok ülkede karantina tedbirleri, sokağa çıkma yasakları ve sosyal mesafe kuralları uygulanmıştır. Bu durum, insanların evden çıkmalarını ve dolayısıyla trafikteki araç sayısını önemli ölçüde azaltmıştır. Azalan trafik, doğal olarak kaza sayılarında da bir düşüşe yol açmıştır.</p>
+<p>Bir diğer sebep ise seyahat kısıtlamalarıdır. Pandemi nedeniyle uygulanan seyahat kısıtlamaları ve turizmdeki düşüş, özellikle turistik bölgelerde ve şehirlerarası yollarda trafik yoğunluğunun azalmasına neden olmuştur. Bu da kaza oranlarını düşüren bir diğer faktör olarak görülebilir.</p>
+<p>Pandemi sırasında birçok işyeri uzaktan çalışmaya geçiş yapmıştır. Aynı şekilde, eğitim kurumları da uzaktan eğitime yönelik adımlar atmıştır. Bu değişiklikler, işe veya okula gidip gelmek için yapılan günlük seyahatleri azaltmış, bu da yollardaki araç sayısının ve potansiyel kaza sayısının azalmasına katkıda bulunmuştur.</p>
 <div class="cell">
 <details>
 <summary>Kodu görüntüle</summary>
@@ -420,7 +433,12 @@ The following object is masked from 'package:dplyr':
 <p><img src="proje_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Grafik3 Yorumlama</p>
+<p><strong>Bölgesel Kazaların 2021-2022 Yıllarına Göre Değişimi:</strong></p>
+<p>Grafikte, Türkiye’nin çeşitli bölgelerinde 2021 ve 2022 yıllarına ait kaza oranlarının karşılaştırması görülmektedir.</p>
+<p>Bazı bölgelerde, özellikle büyük şehirlerde veya turistik bölgelerde trafik yoğunluğunun mevsimsel veya ekonomik etkenlere bağlı olarak değişmesi kaza oranları üzerinde etkili olabilir. Örneğin, turizm sezonunda Ege veya Akdeniz bölgelerindeki trafik artışı kaza oranlarını yükseltebilir.</p>
+<p>2021 ile 2022 arasında yapılan yol yapım ve bakım çalışmaları, bazı bölgelerde kaza oranlarını düşürebilir. Özellikle büyük şehirlerde veya trafik akışının yoğun olduğu ana arterlerde altyapı iyileştirmeleri, trafik güvenliğini artırabilir.</p>
+<p>Trafikle ilgili yasaların veya yönetmeliklerin güncellenmesi, sürücülerin davranışlarını etkileyerek kaza oranları üzerinde değişikliklere neden olabilir. Hız limitlerinin değiştirilmesi, alkol veya uyuşturucu testlerinin sıklaştırılması gibi faktörler kaza oranlarını etkileyebilir.</p>
+<p>Ekonomik durumun kötüleşmesi veya iyileşmesi, araç kullanım sıklığını ve dolayısıyla kaza oranlarını etkileyebilir. Ekonomik durgunluk dönemlerinde insanlar daha az seyahat edebilir veya eski, daha az güvenli araçları kullanmaya devam edebilir.</p>
 <div class="cell">
 <details>
 <summary>Kodu görüntüle</summary>
@@ -448,7 +466,17 @@ The following object is masked from 'package:dplyr':
 <p><img src="proje_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Grafik 4 Yorumlama # Sonuçlar ve Ana Çıkarımlar xxxxxx</p>
+<p><strong>Trafik Kazalarına Sebep Olan Kusurların 2021-2022 Yıllarına Göre Değişimi:</strong></p>
+<p>Bu grafiklerde 2021 ve 2022 yıllarında Türkiye’deki trafik kazalarına sebep olan kusurların sayıları karşılaştırılmaktadır.</p>
+<p>Araç hızını yol, hava ve trafik koşullarına uygun ayarlamama kusuru her iki yıl içiçnde en sık rastlanan kusur olmuştur. Bu durum, sürücülerin hız limitlerine uymamasının yanı sıra, hava koşulları ve yol durumunu dikkate almadan sürüş yapmalarından kaynaklanabilir. Bu kusur, trafik kazalarının önemli bir kısmını oluşturur çünkü uygun olmayan hızlar, reaksiyon süresini azaltır ve kazaların daha şiddetli olmasına neden olur.</p>
+<p>Dönüş kuralllarına uymamma ve yol verme hataları gibi kusurlar genellikle kavşaklarda ve dönüş yapılırken görülür. . Sürücülerin dönüş kurallarına uymaması veya gerektiğinde yol vermemesi, özellikle yoğun trafikte çarpışmalara yol açar.</p>
+<p>Trafik ışıklarına ve dur işaretlerine uyulmaması, hem 2021 hem de 2022 yıllarında yaygın görülen bir kusur olmuş. Bu tür ihlaller, özellikle kavşaklarda ciddi kazalara neden olur.</p>
+<p>Sürücülerin şerit değiştirme kurallarına uymaması veya şerit izleme hataları, özellikle çok şeritli yollarda sıkça karşılaşılan bir problem. Bu durum, yanlış şerit değişimleri ve dolayısıyla yan çarpışmalara sebep olabilir.</p>
+<p>2021 ve 2022 yılları arasında çok büyük farklar olmasada 2022 yılında kazaların biraz daha azalmasının sebepleri; yeni trafik düzenlemeleri, farkındalık ve eğitim kampanyaları ve yeni ceza politikaları olabilir.</p>
+</section>
+<section id="sonuçlar-ve-ana-çıkarımlar" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sonuçlar-ve-ana-çıkarımlar"><span class="header-section-number">3.4</span> Sonuçlar ve Ana Çıkarımlar</h2>
+<p>Bu projede, 2021 ve 2022 yıllarında Türkiye genelindeki trafik kazalarının sıklığı, nedenleri ve sonuçları derinlemesine incelenmiştir. Araştırma, Türkiye İstatistik Kurumu (TÜİK) verileri ile desteklenerek, çeşitli bölgelerdeki kaza oranları ve bu oranların yıllık değişimleri üzerinde durulmuştur. En yaygın kaza kusurları ve bu kusurların kazalara etkisini değerlendiren bu çalışma, sürücü davranışları, yol koşulları, trafik işaretleri ve araçların teknik durumları gibi çeşitli faktörleri içermiştir. Sonuçlar Türkiye’nin farklı bölgelerindeki kaza oranları ve sebeplerini karşılaştırmalı olarak inceleyerek, bölgesel risk faktörlerini ve kaza yoğunluğunu açıkça ortaya koymuştur. Projemizin sonucunda elde edilen bilgiler, trafik kazalarının daha iyi anlaşılmasını ve etkili önlemlerin alınmasını sağlamakta, böylece trafik güvenliği politikalarının daha bilinçli ve stratejik bir şekilde şekillendirilmesine yardımcı olmaktadır. Türkiye’deki trafik kazalarını azaltma ve trafik güvenliğini artırma konusunda atılacak adımlar, bu projeden elde edilen analizler ve çıkarımlar ile desteklenebilir. Bu çalışma, trafik güvenliği alanında gelecekte yapılacak çalışmalara temel oluşturacak ve bu alandaki politika yapıcılarına değerli içgörüler&nbsp;sunacaktır.</p>
 
 
 </section>

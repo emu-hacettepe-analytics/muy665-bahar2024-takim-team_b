@@ -17,6 +17,8 @@ Aynı zamanda rapor kapsamında Türkiye'nin farklı bölgelerindeki kaza oranla
 
 Bu proje kapsamında yapılan değerlendirmeler kazaların daha iyi anlaşılması, etkili önlemlerin alınmasını ve trafik güvenliği politikalarının daha bilinçli şekilde şekillendirilmesini sağlayacaktır.
 
+![](images/trafik%20kazaları.webp)
+
 # Veri
 
 ## Veri Kaynağı
@@ -61,7 +63,9 @@ Keşifsel Veri Analizi'nin Temel Bileşenleri aşağıdaki gibi sınıflandırı
 Trend analizi, zaman içindeki veri noktalarının gözlemlenen davranışlarını inceleyerek gelecekteki hareketleri veya eğilimleri tahmin etmeyi amaçlayan bir veri analiz yöntemidir. Trend analizi, verilerdeki yükseliş, düşüş veya durağanlık gibi uzun vadeli hareketleri belirlemek için yapılan istatistiksel analizler içerir. Bu projede geleceğe yönelik herhangi bir trend analizi yapılmamıştır. Verilerin geleceğe dayalı değerleri tahmin edilmeye çalışılmamıştır.
 
 ## Analiz Sonuçları
-**2009-2022 Yıllarına Ait Trafiğe Kayıtlı Toplam Araç:** 
+
+**2009-2022 Yıllarına Ait Trafiğe Kayıtlı Toplam Araç:**
+
 ```{r}
 #| code-fold: true
 #| code-summary: "Kodu görüntüle"
@@ -70,11 +74,13 @@ Trend analizi, zaman içindeki veri noktalarının gözlemlenen davranışların
 #install.packages("readxl")     # Excel dosyalarını okuma
 #install.packages("ggplot2")    # Görselleştirme
 #install.packages("gridExtra")    # Görselleştirme (subplot)
+#install.packages("dplyr") # Data manipülasyon genel paket (gridextra paketi için)
 
-library(tidyverse)
-library(readxl)
-library(ggplot2)
-library(gridExtra)
+library(tidyverse);
+library(readxl);
+library(ggplot2);
+library(gridExtra);
+library(dplyr);
 
 # Veriyi okuma
 total_2009_2022 <- read_excel("trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls")
@@ -127,8 +133,19 @@ ggplot(total_2009_2022, aes(x = Year, y = Number.of.vehicles.registered.to.traff
   labs(title = "Yıllara Göre Trafiğe Kayıtlı Araç Sayısı", x = "Yıl", y = "Araç Sayısı")
 
 ```
-Grafik 1 Yorumlama
-**2009-2022 Kazaların Yıllara Göre Değişimi:** 
+
+**2009-2022 Yıllarında Trafiğe Kayıtlı Araç Sayısı:**
+
+Türkiyenin hızlı nüfus artışı ve kentsel bölgelerdeki büyüme, daha fazla bireyin özel araçlara ihtiyaç duymasına yol açmıştır. Artık kentsel alanlarda yaşayan insanlar, işe ulaşım, alışveriş ve diğer günlük ihtiyaçlar için kişisel taşıtlarını tercih etmektedir.
+
+Türkiye ekonomisinin büyümesindeki artış hane hallklarının gelirlerinde de artışa neden olmuştur, bu da fazla kişinin araç satın almasına olanak sağlamıştır.
+
+Türkiye'deki karayolu altyapısının gelişimi, özellikle otoyollar ve köprüler, özel araç kullanımını daha cazip hale getirmiştir. İyi altyapı, araç kullanımını daha verimli ve konforlu hale getirerek, araç sahipliğini teşvik etmiştir.
+
+Bazı bölgelerde toplu taşıma sistemlerinin yetersiz kalması veya erişilebilir olmaması, insanları kendi araçlarını almaya yönlendirmiştir. Toplu taşıma seçeneklerinin sınırlı olduğu şehir ve kasabalarda, bireyler günlük ulaşım ihtiyaçlarını karşılamak için özel araçlara daha fazla bağımlı hale gelmişlerdir.
+
+Bankalar ve finans kuruluşları tarafından sunulan uygun kredi imkanları ve araç finansman seçenekleri, daha fazla insanın araba sahibi olmasını kolaylaştırmıştır. Özellikle düşük faiz oranları, araç alımlarını daha erişilebilir hale getirmiştir.
+
 ```{r}
 #| code-fold: true
 #| code-summary: "Kodu görüntüle"
@@ -141,7 +158,15 @@ ggplot(total_2009_2022, aes(x = Year, y = Total.number.of.accidents)) +
   labs(title = "Yıllara Göre Toplam Kaza Sayısı", 
        x = "Yıl", y = "Sayı")
 ```
-Grafik2 Yorumlama
+
+**Kazaların 2009-2022 Yıllarına Göre Değişimi:**
+
+Grafiğe bakıldığında, 2020 yılında toplam kaza sayısında belirgin bir düşüş görülmektedir. Bu düşüşün başlıca sebepleri  arasında COVİD-19 pandemisi bulunmaktadır.2020 yılı, dünya genelinde COVID-19 pandemisinin etkili olduğu bir yıl olmuştur. Türkiye dahil birçok ülkede karantina tedbirleri, sokağa çıkma yasakları ve sosyal mesafe kuralları uygulanmıştır. Bu durum, insanların evden çıkmalarını ve dolayısıyla trafikteki araç sayısını önemli ölçüde azaltmıştır. Azalan trafik, doğal olarak kaza sayılarında da bir düşüşe yol açmıştır.
+
+Bir diğer sebep ise seyahat kısıtlamalarıdır. Pandemi nedeniyle uygulanan seyahat kısıtlamaları ve turizmdeki düşüş, özellikle turistik bölgelerde ve şehirlerarası yollarda trafik yoğunluğunun azalmasına neden olmuştur. Bu da kaza oranlarını düşüren bir diğer faktör olarak görülebilir.
+
+Pandemi sırasında birçok işyeri uzaktan çalışmaya geçiş yapmıştır. Aynı şekilde, eğitim kurumları da uzaktan eğitime yönelik adımlar atmıştır. Bu değişiklikler, işe veya okula gidip gelmek için yapılan günlük seyahatleri azaltmış, bu da yollardaki araç sayısının ve potansiyel kaza sayısının azalmasına katkıda bulunmuştur.
+
 ```{r}
 #| code-fold: true
 #| code-summary: "Kodu görüntüle"
@@ -175,7 +200,18 @@ ggplot(combined_data, aes(x = Region, y = Ratio, fill = Year)) +
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) # X eksenindeki etiketleri düzenle
 
 ```
-Grafik3 Yorumlama
+
+**Bölgesel Kazaların 2021-2022 Yıllarına Göre Değişimi:**
+
+Grafikte, Türkiye'nin çeşitli bölgelerinde 2021 ve 2022 yıllarına ait kaza oranlarının karşılaştırması görülmektedir.
+
+Bazı bölgelerde, özellikle büyük şehirlerde veya turistik bölgelerde trafik yoğunluğunun mevsimsel veya ekonomik etkenlere bağlı olarak değişmesi kaza oranları üzerinde etkili olabilir. Örneğin, turizm sezonunda Ege veya Akdeniz bölgelerindeki trafik artışı kaza oranlarını yükseltebilir.
+
+2021 ile 2022 arasında yapılan yol yapım ve bakım çalışmaları, bazı bölgelerde kaza oranlarını düşürebilir. Özellikle büyük şehirlerde veya trafik akışının yoğun olduğu ana arterlerde altyapı iyileştirmeleri, trafik güvenliğini artırabilir.
+
+Trafikle ilgili yasaların veya yönetmeliklerin güncellenmesi, sürücülerin davranışlarını etkileyerek kaza oranları üzerinde değişikliklere neden olabilir. Hız limitlerinin değiştirilmesi, alkol veya uyuşturucu testlerinin sıklaştırılması gibi faktörler kaza oranlarını etkileyebilir.
+
+Ekonomik durumun kötüleşmesi veya iyileşmesi, araç kullanım sıklığını ve dolayısıyla kaza oranlarını etkileyebilir. Ekonomik durgunluk dönemlerinde insanlar daha az seyahat edebilir veya eski, daha az güvenli araçları kullanmaya devam edebilir.
 
 ```{r}
 #| code-fold: true
@@ -202,6 +238,21 @@ grid.arrange(p1, p2, nrow=2,ncol = 1)
 
 
 ```
-Grafik 4 Yorumlama
-# Sonuçlar ve Ana Çıkarımlar
-xxxxxx
+
+**Trafik Kazalarına Sebep Olan Kusurların 2021-2022 Yıllarına Göre Değişimi:**
+
+Bu grafiklerde 2021 ve 2022 yıllarında Türkiye'deki trafik kazalarına sebep olan kusurların sayıları karşılaştırılmaktadır.
+
+Araç hızını yol, hava ve trafik koşullarına uygun ayarlamama kusuru her iki yıl içiçnde en sık rastlanan kusur olmuştur. Bu durum, sürücülerin hız limitlerine uymamasının yanı sıra, hava koşulları ve yol durumunu dikkate almadan sürüş yapmalarından kaynaklanabilir. Bu kusur, trafik kazalarının önemli bir kısmını oluşturur çünkü uygun olmayan hızlar, reaksiyon süresini azaltır ve kazaların daha şiddetli olmasına neden olur.
+
+Dönüş kuralllarına uymamma ve yol verme hataları gibi kusurlar genellikle kavşaklarda ve dönüş yapılırken görülür. . Sürücülerin dönüş kurallarına uymaması veya gerektiğinde yol vermemesi, özellikle yoğun trafikte çarpışmalara yol açar.
+
+Trafik ışıklarına ve dur işaretlerine uyulmaması, hem 2021 hem de 2022 yıllarında yaygın görülen bir kusur olmuş. Bu tür ihlaller, özellikle kavşaklarda ciddi kazalara neden olur.
+
+Sürücülerin şerit değiştirme kurallarına uymaması veya şerit izleme hataları, özellikle çok şeritli yollarda sıkça karşılaşılan bir problem. Bu durum, yanlış şerit değişimleri ve dolayısıyla yan çarpışmalara sebep olabilir.
+
+2021 ve 2022 yılları arasında çok büyük farklar olmasada 2022 yılında kazaların biraz daha azalmasının sebepleri; yeni trafik düzenlemeleri, farkındalık ve eğitim kampanyaları ve yeni ceza politikaları olabilir.
+
+## Sonuçlar ve Ana Çıkarımlar
+
+Bu projede, 2021 ve 2022 yıllarında Türkiye genelindeki trafik kazalarının sıklığı, nedenleri ve sonuçları derinlemesine incelenmiştir. Araştırma, Türkiye İstatistik Kurumu (TÜİK) verileri ile desteklenerek, çeşitli bölgelerdeki kaza oranları ve bu oranların yıllık değişimleri üzerinde durulmuştur. En yaygın kaza kusurları ve bu kusurların kazalara etkisini değerlendiren bu çalışma, sürücü davranışları, yol koşulları, trafik işaretleri ve araçların teknik durumları gibi çeşitli faktörleri içermiştir. Sonuçlar Türkiye'nin farklı bölgelerindeki kaza oranları ve sebeplerini karşılaştırmalı olarak inceleyerek, bölgesel risk faktörlerini ve kaza yoğunluğunu açıkça ortaya koymuştur. Projemizin sonucunda elde edilen bilgiler, trafik kazalarının daha iyi anlaşılmasını ve etkili önlemlerin alınmasını sağlamakta, böylece trafik güvenliği politikalarının daha bilinçli ve stratejik bir şekilde şekillendirilmesine yardımcı olmaktadır. Türkiye'deki trafik kazalarını azaltma ve trafik güvenliğini artırma konusunda atılacak adımlar, bu projeden elde edilen analizler ve çıkarımlar ile desteklenebilir. Bu çalışma, trafik güvenliği alanında gelecekte yapılacak çalışmalara temel oluşturacak ve bu alandaki politika yapıcılarına değerli içgörüler sunacaktır.
