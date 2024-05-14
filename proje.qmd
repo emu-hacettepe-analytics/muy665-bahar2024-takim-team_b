@@ -70,17 +70,19 @@ Trend analizi, zaman içindeki veri noktalarının gözlemlenen davranışların
 #| code-fold: true
 #| code-summary: "Kodu görüntüle"
 # Gerekli Kütüphaneler
+
+#install.packages("dplyr") # Data manipülasyon genel paket (gridextra paketi için)
 #install.packages("tidyverse")  # Veri işleme ve görselleştirme
 #install.packages("readxl")     # Excel dosyalarını okuma
 #install.packages("ggplot2")    # Görselleştirme
 #install.packages("gridExtra")    # Görselleştirme (subplot)
-#install.packages("dplyr") # Data manipülasyon genel paket (gridextra paketi için)
 
+library(dplyr);
 library(tidyverse);
 library(readxl);
 library(ggplot2);
 library(gridExtra);
-library(dplyr);
+
 
 # Veriyi okuma
 total_2009_2022 <- read_excel("trafige_kayitli_arac_kaza_olu_ve_yarali_sayisi_2009_2022.xls")
