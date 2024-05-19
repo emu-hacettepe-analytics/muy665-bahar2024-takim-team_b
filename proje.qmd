@@ -238,7 +238,8 @@ p2 <- ggplot(kusurlar_2022, aes(x = Total, y = Fault.Number)) +
 
 grid.arrange(p1,p2,ncol=2)
 ```
-
+![](images/1.webp.png)
+![](images/2.png)
 Bu grafiklerde 2021 ve 2022 yıllarında Türkiye'deki trafik kazalarına sebep olan kusurların sayıları karşılaştırılmaktadır.
 
 Araç hızını yol, hava ve trafik koşullarına uygun ayarlamama kusuru her iki yıl içiçnde en sık rastlanan kusur olmuştur. Bu durum, sürücülerin hız limitlerine uymamasının yanı sıra, hava koşulları ve yol durumunu dikkate almadan sürüş yapmalarından kaynaklanabilir. Bu kusur, trafik kazalarının önemli bir kısmını oluşturur çünkü uygun olmayan hızlar, reaksiyon süresini azaltır ve kazaların daha şiddetli olmasına neden olur.
